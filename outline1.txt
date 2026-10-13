@@ -1,0 +1,1017 @@
+small «เว็บไซต์นี้อยู่ภายใต้การกำกับดูแลของสำนักนายกรัฐมนตรี»
+<h1> «การแก้ไขข้อมูลนิติบุคคล»
+<form id="form_preview" data-controller="eform" data-eform-target="form">
+<input type="hidden" name="authenticity_token" value="XHtDh0iwfoA54L5X86yFa7vaZBZkyUU4deirtBZJKuyY8tUTSOa061oaqT7H">
+<fieldset id="heading_1-container" data-eform-identity-types="Citizen Juristic">
+<h2> «ข้อมูลทั่วไป»
+<fieldset id="basic_information_5-citizen-container" data-eform-identity-types="Citizen">
+<div data-controller="basic-information-field">
+<h4> «ข้อมูลบุคคลผู้ขออนุญาต»
+<label for="basic_information"> «วัน/เดือน/ปี/ที่ยื่นคำขอ»
+<input name="Applicant[WriteDate]" value="10 กันยายน 2569" readonly="readonly" disabled="disabled" type="text" id="basic_information">
+<label for="applicant_write_at"> «เขียนที่»
+<input id="applicant_write_at" name="Applicant[WriteAt]" value="Biz Portal" readonly="readonly" disabled="disabled" type="text">
+<label for="basic_information"> «ขออนุญาตในฐานะบุคคลธรรมดาหรือนิติบุคคล»
+<input name="Applicant[IdentityTypeTitle]" value="บุคคลธรรมดา" readonly="readonly" disabled="disabled" type="text" id="basic_information">
+<label for="basic_information"> «คำนำหน้า»
+<select name="Applicant[Title]" data-action="change-&gt;basic-information-field#changeTitle" id="basic_information">
+<option value="">
+<option value="นาย"> «นาย»
+<option value="นางสาว"> «นางสาว»
+<option value="นาง"> «นาง»
+<option value="ว่าที่ร้อยตรี"> «ว่าที่ร้อยตรี»
+<option value="Sir"> «Sir»
+<option value="Doctor"> «Doctor»
+<option value="Professor"> «Professor»
+<option value="พ.ต."> «พ.ต.»
+<option value="พ.ท."> «พ.ท.»
+<option value="พ.อ."> «พ.อ.»
+<option value="พ.จ.อ."> «พ.จ.อ.»
+<option value="จ.ส.ต."> «จ.ส.ต.»
+<option value="ร้อยตรี"> «ร้อยตรี»
+<option value="ส.ต."> «ส.ต.»
+<option value="พลฯ"> «พลฯ»
+<option value="ร.ต.ต."> «ร.ต.ต.»
+<option value="พ.อ.อ."> «พ.อ.อ.»
+<option value="ร้อยตำรวจโท"> «ร้อยตำรวจโท»
+<option value="จ่าอากาศเอก"> «จ่าอากาศเอก»
+<option value="ร.ต"> «ร.ต»
+<option value="ด.ต."> «ด.ต.»
+<option value="น.อ."> «น.อ.»
+<option value="จ.อ."> «จ.อ.»
+<option value="บริษัท"> «บริษัท»
+<option value="ร.ท."> «ร.ท.»
+<option value="ร.ต.อ"> «ร.ต.อ»
+<option value="พ.ต.อ."> «พ.ต.อ.»
+<option value="อื่นๆ"> «อื่นๆ»
+<div data-basic-information-field-target="titleOther" class~d-none>
+<input name="Applicant[TitleOther]" type="text" id="basic_information">
+<label for="basic_information"> «ชื่อ»
+<input name="FirstName" readonly="readonly" disabled="disabled" type="text" id="basic_information">
+<label for="basic_information"> «นามสกุล»
+<input name="LastName" readonly="readonly" disabled="disabled" type="text" id="basic_information">
+<div class~hidden>
+<input class~hidden name="Applicant[FirstName]" type="hidden" id="basic_information">
+<div class~hidden>
+<input class~hidden name="Applicant[LastName]" type="hidden" id="basic_information">
+<label for="basic_information"> «เลขประจำตัวประชาชน 13 หลัก»
+<input name="CitizenId" readonly="readonly" disabled="disabled" type="text" id="basic_information">
+<div data-controller="datepicker">
+<label for="basic_information"> «วัน เดือน ปีเกิด»
+<input data-datepicker-target="input" data-action="cable-ready:after-morph@document-&gt;datepicker#connect chan" name="Applicant[BirthDate]" type="text" id="basic_information">
+<span data-datepicker-target="toggle">
+<label for="basic_information"> «อายุ»
+<input name="Applicant[Age]" maxlength="2" data-basic-information-field-target="age" type="text" id="basic_information">
+<label for="basic_information"> «สัญชาติ»
+<input name="Applicant[Nationality]" value="ไทย" readonly="readonly" type="text" id="basic_information">
+<label for="basic_information"> «เชื้อชาติ»
+<input name="Applicant[Race]" value="ไทย" readonly="readonly" type="text" id="basic_information">
+<label for="religion"> «ศาสนา»
+<select id="religion" name="Applicant[Religion]">
+<option value="">
+<option value="พุทธ"> «พุทธ»
+<option value="อิสลาม"> «อิสลาม»
+<option value="คริสต์"> «คริสต์»
+<option value="พราหมณ์-ฮินดู"> «พราหมณ์-ฮินดู»
+<option value="ซิกข์"> «ซิกข์»
+<option value="ยิว"> «ยิว»
+<option value="เชน"> «เชน»
+<option value="โซโรอัสเตอร์"> «โซโรอัสเตอร์»
+<option value="บาไฮ"> «บาไฮ»
+<option value="ไม่ระบุ"> «ไม่ระบุ»
+<h4> «ข้อมูลที่อยู่ตามบัตรประชาชน»
+<label for="basic_information"> «เลขที่»
+<input name="Applicant[Address][AddressNo]" type="text" id="basic_information">
+<label for="basic_information"> «หมู่ที่»
+<input name="Applicant[Address][VillageNo]" maxlength="2" type="text" id="basic_information">
+<label for="basic_information"> «หมู่บ้าน»
+<input name="Applicant[Address][Village]" type="text" id="basic_information">
+<label for="basic_information"> «ตรอก/ซอย»
+<input name="Applicant[Address][Soi]" type="text" id="basic_information">
+<label for="basic_information"> «อาคาร»
+<input name="Applicant[Address][BuildingName]" type="text" id="basic_information">
+<label for="basic_information"> «ห้องเลขที่»
+<input name="Applicant[Address][RoomNo]" type="text" id="basic_information">
+<label for="basic_information"> «ชั้น»
+<input name="Applicant[Address][FloorNo]" type="text" id="basic_information">
+<label for="basic_information"> «ถนน»
+<input name="Applicant[Address][Road]" type="text" id="basic_information">
+<div data-controller="select-search-field" data-select-search-field-endpoint-url-value="/provinces.json" data-select-search-field-endpoint-value-key-value="province" data-select-search-field-endpoint-title-key-value="province" data-select-search-field-onchange-endpoint-url-value="/amphoes" data-select-search-field-onchange-endpoint-value-key-value="amphoe" data-select-search-field-onchange-endpoint-title-key-value="amphoe" data-select-search-field-onchange-to-selector-value="#amphoe" data-action="cable-ready:after-morph@document-&gt;select-search-field#ini">
+<label for="province"> «จังหวัด»
+<select id="province" name="Applicant[Address][Province]" data-select-search-field-target="select">
+<option value="">
+<div data-controller="select-search-field" data-select-search-field-endpoint-url-value="/amphoes.json" data-select-search-field-endpoint-value-key-value="amphoe" data-select-search-field-endpoint-title-key-value="amphoe" data-select-search-field-onchange-endpoint-url-value="/tambons" data-select-search-field-province-selector-value="#province" data-select-search-field-amphoe-selector-value="" data-select-search-field-onchange-endpoint-value-key-value="tambon" data-select-search-field-onchange-endpoint-title-key-value="tambon" data-select-search-field-onchange-to-selector-value="#tambon" data-action="cable-ready:after-morph@document-&gt;select-search-field#ini">
+<label for="amphoe"> «อำเภอ/เขต»
+<select id="amphoe" name="Applicant[Address][District]" data-select-search-field-target="select">
+<option value="">
+<div data-controller="select-search-field" data-select-search-field-endpoint-url-value="/tambons.json" data-select-search-field-endpoint-value-key-value="tambon" data-select-search-field-endpoint-title-key-value="tambon" data-select-search-field-province-selector-value="#province" data-select-search-field-amphoe-selector-value="#amphoe" data-select-search-field-onchange-endpoint-url-value="/postcodes" data-select-search-field-onchange-endpoint-value-key-value="postcode" data-select-search-field-onchange-endpoint-title-key-value="postcode" data-select-search-field-onchange-to-selector-value="#postcode" data-action="cable-ready:after-morph@document-&gt;select-search-field#ini">
+<label for="tambon"> «ตำบล/แขวง»
+<select id="tambon" name="Applicant[Address][SubDistrict]" data-select-search-field-target="select">
+<option value="">
+<label for="postcode"> «รหัสไปรษณีย์»
+<input id="postcode" name="Applicant[Address][PostCode]" maxlength="5" readonly="readonly" type="text">
+<label for="basic_information"> «โทรศัพท์»
+<input name="Applicant[Telephone]" required="required" type="text" id="basic_information">
+<label for="basic_information"> «โทรศัพท์มือถือ»
+<input name="Applicant[MobilePhone]" maxlength="12" type="text" id="basic_information">
+<div class~hidden>
+<input class~hidden name="Applicant[Address][Contacts][][ContactType]" value="Fax" type="hidden" id="basic_information">
+<label for="basic_information"> «โทรสาร»
+<input name="Applicant[Address][Contacts][][ContactDetail]" type="text" id="basic_information">
+<fieldset id="basic_information_5-juristic-container" class~d-none data-eform-identity-types="Juristic" disabled>
+<div data-controller="basic-information-field">
+<h4> «ข้อมูลนิติบุคคล»
+<label for="basic_information"> «วัน/เดือน/ปี/ที่ยื่นคำขอ»
+<input name="Applicant[WriteDate]" value="10 กันยายน 2569" readonly="readonly" disabled="disabled" type="text" id="basic_information">
+<label for="basic_information"> «เขียนที่»
+<input name="Applicant[WriteAt]" value="Biz Portal" readonly="readonly" disabled="disabled" type="text" id="basic_information">
+<label for="basic_information"> «ขออนุญาตในฐานะบุคคลธรรมดาหรือนิติบุคคล»
+<input name="Applicant[IdentityTypeTitle]" value="นิติบุคคล" readonly="readonly" disabled="disabled" type="text" id="basic_information">
+<label for="basic_information"> «ชื่อนิติบุคคล ภาษาไทย»
+<input name="Applicant[Name]" readonly="readonly" type="text" id="basic_information">
+<label for="basic_information"> «ชื่อนิติบุคคล ภาษาอังกฤษ»
+<input name="Applicant[NameEn]" value="-" readonly="readonly" type="text" id="basic_information">
+<label for="basic_information"> «ประเภทนิติบุคคล»
+<input name="Applicant[JuristicType]" readonly="readonly" type="text" id="basic_information">
+<label for="basic_information"> «เลขทะเบียนนิติบุคคล 13 หลัก»
+<input name="Applicant[JuristicId]" readonly="readonly" type="text" id="basic_information">
+<label for="basic_information"> «เงินทุนจดทะเบียน (บาท)»
+<input name="Applicant[RegisterCapital]" readonly="readonly" type="text" id="basic_information">
+<label for="basic_information"> «วัน/เดือน/ปี ที่จดทะเบียนนิติบุคคล»
+<input name="RegisterDate" readonly="readonly" disabled="disabled" type="text" id="basic_information">
+<div class~hidden>
+<input class~hidden name="Applicant[RegisterDate]" type="hidden" id="basic_information">
+<label for="basic_information"> «อีเมล (ที่ใช้สำหรับติดต่อ)»
+<input name="Applicant[Email]" pattern="[^@ ]+@[^@ ]+.[^@ ]+" type="email" id="basic_information">
+<h4> «ข้อมูลที่อยู่ตามทะเบียนนิติบุคคล»
+<label for="basic_information"> «เลขที่»
+<input name="Applicant[Address][AddressNo]" readonly="readonly" type="text" id="basic_information">
+<label for="basic_information"> «หมู่ที่»
+<input name="Applicant[Address][VillageNo]" maxlength="2" readonly="readonly" type="text" id="basic_information">
+<label for="basic_information"> «หมู่บ้าน»
+<input name="Applicant[Address][Village]" type="text" id="basic_information">
+<label for="basic_information"> «ตรอก/ซอย»
+<input name="Applicant[Address][Soi]" readonly="readonly" type="text" id="basic_information">
+<label for="basic_information"> «อาคาร»
+<input name="Applicant[Address][BuildingName]" readonly="readonly" type="text" id="basic_information">
+<label for="basic_information"> «ห้องเลขที่»
+<input name="Applicant[Address][RoomNo]" readonly="readonly" type="text" id="basic_information">
+<label for="basic_information"> «ชั้น»
+<input name="Applicant[Address][FloorNo]" readonly="readonly" type="text" id="basic_information">
+<label for="basic_information"> «ถนน»
+<input name="Applicant[Address][Road]" readonly="readonly" type="text" id="basic_information">
+<label for="basic_information"> «จังหวัด»
+<input name="Applicant[Address][Province]" readonly="readonly" type="text" id="basic_information">
+<label for="basic_information"> «อำเภอ/เขต»
+<input name="Applicant[Address][District]" readonly="readonly" type="text" id="basic_information">
+<label for="basic_information"> «ตำบล/แขวง»
+<input name="Applicant[Address][SubDistrict]" readonly="readonly" type="text" id="basic_information">
+<label for="basic_information"> «รหัสไปรษณีย์»
+<input name="Applicant[Address][PostCode]" maxlength="5" readonly="readonly" type="text" id="basic_information">
+<label for="basic_information"> «โทรศัพท์»
+<input name="Applicant[Telephone]" type="text" id="basic_information">
+<div class~hidden>
+<input class~hidden name="Applicant[Address][Contacts][][ContactType]" value="Fax" type="hidden" id="basic_information">
+<label for="basic_information"> «โทรสาร»
+<input name="Applicant[Address][Contacts][][ContactDetail]" type="text" id="basic_information">
+<div data-eform-committee-list>
+<fieldset id="content_3-container" data-eform-identity-types="Citizen Juristic">
+<div data-controller="content-field">
+div «ข้าพเจ้าขอแก้ไขข้อมูลนิติบุคคลที่ได้แจ้งจดทะเบียนไว้กับสภาวิชาชีพบัญชีตามมาตรา 11 และมาตรา 78 พระราชบัญญัติวิชาชีพบัญชี พ.ศ. 2547 โดยมีรายละเอียดดังนี้(กรุณาเลื»
+<fieldset id="Modify_Check-container" data-eform-identity-types="Citizen Juristic">
+<fieldset data-controller="checkbox-field" data-checkbox-field-checked-value="true" data-checkbox-field-default-value-value="1" data-checkbox-field-selector-value="#Modify">
+<input name="Modify_Check" type="hidden" value="0">
+<input id="Modify_Check" name="Modify_Check" data-action="change-&gt;checkbox-field#optionChanged cable-ready:after-mo" type="checkbox" value="1">
+<label for="Modify_Check"> «1. ชื่อนิติบุคคล (เฉพาะกรณีเปลี่ยนชื่อนิติบุคคล)»
+<fieldset id="Modify-container" data-eform-identity-types="Citizen Juristic">
+<div data-controller="group-field" id="Modify" class~d-none disabled>
+<label for="Modify[Old][NameTh]"> «ชื่อภาษาไทย (นิติบุคคลเดิม)»
+<input id="Modify[Old][NameTh]" name="Modify[Old][NameTh]" value="" maxlength="" readonly="readonly" disabled="disabled" type="text">
+<label for="Modify[New][NameTh]"> «ชื่อภาษาไทย (นิติบุคคลใหม่)»
+<input id="Modify[New][NameTh]" name="Modify[New][NameTh]" value="" maxlength="" readonly="readonly" disabled="disabled" type="text">
+<label for="Modify[Old][NameEn]"> «ชื่อภาษาอังกฤษ (นิติบุคคลเดิม)»
+<input id="Modify[Old][NameEn]" name="Modify[Old][NameEn]" value="" maxlength="" readonly="readonly" disabled="disabled" type="text">
+<label for="Modify[New][NameEn]"> «ชื่อภาษาอังกฤษ (นิติบุคคลใหม่) (กรุณาพิมพ์ชื่อเป็นภาษาอังกฤษเท่านั้น)»
+<input id="Modify[New][NameEn]" name="Modify[New][NameEn]" value="" pattern="" maxlength="" disabled="disabled" type="text">
+<fieldset id="Transformation_Check-container" data-eform-identity-types="Citizen Juristic">
+<fieldset data-controller="checkbox-field" data-checkbox-field-checked-value="true" data-checkbox-field-default-value-value="1" data-checkbox-field-selector-value="#Transformation">
+<input name="Transformation_Check" type="hidden" value="0">
+<input id="Transformation_Check" name="Transformation_Check" data-action="change-&gt;checkbox-field#optionChanged cable-ready:after-mo" type="checkbox" value="1">
+<label for="Transformation_Check"> «2. แปรสภาพนิติบุคคล (เฉพาะกรณีแปรสภาพ)»
+<fieldset id="Transformation-container" data-eform-identity-types="Citizen Juristic">
+<div data-controller="group-field" id="Transformation" class~d-none disabled>
+<label for="Transformation[Old][NameTh]"> «ชื่อภาษาไทย (นิติบุคคลเดิม)»
+<input id="Transformation[Old][NameTh]" name="Transformation[Old][NameTh]" value="" maxlength="" readonly="readonly" disabled="disabled" type="text">
+<label for="Transformation[New][NameTh]"> «ชื่อภาษาไทย (นิติบุคคลใหม่)»
+<input id="Transformation[New][NameTh]" name="Transformation[New][NameTh]" value="" maxlength="" readonly="readonly" disabled="disabled" type="text">
+<label for="Transformation[Old][NameEn]"> «ชื่อภาษาอังกฤษ (นิติบุคคลเดิม)»
+<input id="Transformation[Old][NameEn]" name="Transformation[Old][NameEn]" value="" maxlength="" readonly="readonly" disabled="disabled" type="text">
+<label for="Transformation[New][NameEn]"> «ชื่อภาษาอังกฤษ (นิติบุคคลใหม่) (กรุณาพิมพ์ชื่อเป็นภาษาอังกฤษเท่านั้น)»
+<input id="Transformation[New][NameEn]" name="Transformation[New][NameEn]" value="" pattern="" maxlength="" readonly="readonly" disabled="disabled" type="text">
+<label for="Transformation[Old][Number]"> «เลขทะเบียนนิติบุคคล (นิติบุคคลเดิม)»
+<input id="Transformation[Old][Number]" name="Transformation[Old][Number]" value="" maxlength="" readonly="readonly" disabled="disabled" type="text">
+<label for="Transformation[New][Number]"> «เลขทะเบียนนิติบุคคล (นิติบุคคลใหม่)»
+<input id="Transformation[New][Number]" name="Transformation[New][Number]" value="" maxlength="" readonly="readonly" disabled="disabled" type="text">
+<label for="Transformation[Old][Type]"> «ประเภทนิติ บุคคล (ห้างหุ้นส่วนสามัญนิติบุคคล, ห้างหุ้นส่วนจำกัด, บริษัทจำกัด, บริษัทมหาชนจำกัด)»
+<input id="Transformation[Old][Type]" name="Transformation[Old][Type]" value="" maxlength="" readonly="readonly" disabled="disabled" type="text">
+<label for="Transformation[New][Type]"> «ประเภทนิติ บุคคล (ห้างหุ้นส่วนสามัญนิติบุคคล, ห้างหุ้นส่วนจำกัด, บริษัทจำกัด, บริษัทมหาชนจำกัด)»
+<input id="Transformation[New][Type]" name="Transformation[New][Type]" value="" maxlength="" readonly="readonly" disabled="disabled" type="text">
+<fieldset id="JurLocation_Check-container" data-eform-identity-types="Citizen Juristic">
+<fieldset data-controller="checkbox-field" data-checkbox-field-checked-value="true" data-checkbox-field-default-value-value="1" data-checkbox-field-selector-value="#JurLocation_Other,#JurLocation,#JurLocation_Group_Amount">
+<input name="JurLocation_Check" type="hidden" value="0">
+<input id="JurLocation_Check" name="JurLocation_Check" data-action="change-&gt;checkbox-field#optionChanged cable-ready:after-mo" type="checkbox" value="1">
+<label for="JurLocation_Check"> «3. ที่ตั้งนิติบุคคล (เฉพาะกรณีเปลี่ยนที่ตั้งนิติบุคคล)»
+<fieldset id="JurLocation-container" data-eform-identity-types="Citizen Juristic">
+<div data-controller="group-field" id="JurLocation">
+<h2> «ที่ตั้งนิติบุคคลเดิม»
+<label for="JurLocation[Old][No]"> «ที่อยู่เลขที่»
+<input id="JurLocation[Old][No]" name="JurLocation[Old][No]" value="" maxlength="" readonly="readonly" type="text">
+<label for="JurLocation[Old][Moo]"> «หมู่ที่»
+<input id="JurLocation[Old][Moo]" name="JurLocation[Old][Moo]" value="" maxlength="" readonly="readonly" type="text">
+<label for="JurLocation[Old][Building]"> «อาคาร»
+<input id="JurLocation[Old][Building]" name="JurLocation[Old][Building]" value="" maxlength="" readonly="readonly" type="text">
+<label for="JurLocation[Old][Floor]"> «ชั้น»
+<input id="JurLocation[Old][Floor]" name="JurLocation[Old][Floor]" value="" maxlength="" readonly="readonly" type="text">
+<label for="JurLocation[Old][Room]"> «ห้อง»
+<input id="JurLocation[Old][Room]" name="JurLocation[Old][Room]" value="" maxlength="" readonly="readonly" type="text">
+<label for="JurLocation[Old][Village]"> «หมู่บ้าน»
+<input id="JurLocation[Old][Village]" name="JurLocation[Old][Village]" value="" pattern="" maxlength="" readonly="readonly" type="text">
+<label for="JurLocation[Old][Alley]"> «ตรอก/ ซอย»
+<input id="JurLocation[Old][Alley]" name="JurLocation[Old][Alley]" value="" maxlength="" readonly="readonly" type="text">
+<label for="JurLocation[Old][Road]"> «ถนน»
+<input id="JurLocation[Old][Road]" name="JurLocation[Old][Road]" value="" maxlength="" readonly="readonly" type="text">
+<label for="JurLocation[Old][SubDistrict]"> «ตำบล/แขวง»
+<input id="JurLocation[Old][SubDistrict]" name="JurLocation[Old][SubDistrict]" value="" maxlength="" readonly="readonly" type="text">
+<label for="JurLocation[Old][District]"> «อำเภอ/เขต»
+<input id="JurLocation[Old][District]" name="JurLocation[Old][District]" value="" maxlength="" readonly="readonly" type="text">
+<label for="JurLocation[Old][Province]"> «จังหวัด»
+<input id="JurLocation[Old][Province]" name="JurLocation[Old][Province]" value="" maxlength="" readonly="readonly" type="text">
+<label for="JurLocation[Old][PostCode]"> «รหัสไปรษณีย์»
+<input id="JurLocation[Old][PostCode]" name="JurLocation[Old][PostCode]" value="" maxlength="" readonly="readonly" type="text">
+<label for="JurLocation[Old][Branch_Code]"> «รหัสสาขา»
+<input id="JurLocation[Old][Branch_Code]" name="JurLocation[Old][Branch_Code]" value="00000" maxlength="5" readonly="readonly" type="text">
+<label for="JurLocation[Old][TelePhone]"> «เบอร์โทรศัพท์สำนักงาน»
+<input id="JurLocation[Old][TelePhone]" name="JurLocation[Old][TelePhone]" value="" maxlength="" readonly="readonly" type="text">
+<label for="JurLocation[Old][Mobile]"> «เบอร์โทรศัพท์มือถือสำนักงาน»
+<input id="JurLocation[Old][Mobile]" name="JurLocation[Old][Mobile]" value="" maxlength="10" required="required" type="text">
+<label for="JurLocation[Old][Email]"> «e-mail สำนักงาน»
+<input id="JurLocation[Old][Email]" name="JurLocation[Old][Email]" value="" maxlength="" required="required" type="text">
+<div class~hidden>
+<input class~hidden name="JurLocation[Old][Address_Type_ID]" value="1" type="hidden" id="hidden">
+<h2> «ที่ตั้งนิติบุคคลใหม่»
+<label for="JurLocation[New][No]"> «ที่อยู่เลขที่»
+<input id="JurLocation[New][No]" name="JurLocation[New][No]" value="" maxlength="" readonly="readonly" type="text">
+<label for="JurLocation[New][Moo]"> «หมู่ที่»
+<input id="JurLocation[New][Moo]" name="JurLocation[New][Moo]" value="" maxlength="" readonly="readonly" type="text">
+<label for="JurLocation[New][Building]"> «อาคาร»
+<input id="JurLocation[New][Building]" name="JurLocation[New][Building]" value="" maxlength="" readonly="readonly" type="text">
+<label for="JurLocation[New][Floor]"> «ชั้น»
+<input id="JurLocation[New][Floor]" name="JurLocation[New][Floor]" value="" maxlength="" readonly="readonly" type="text">
+<label for="JurLocation[New][Room]"> «ห้อง»
+<input id="JurLocation[New][Room]" name="JurLocation[New][Room]" value="" maxlength="" readonly="readonly" type="text">
+<label for="JurLocation[New][Village]"> «หมู่บ้าน»
+<input id="JurLocation[New][Village]" name="JurLocation[New][Village]" value="" pattern="" maxlength="" readonly="readonly" type="text">
+<label for="JurLocation[New][Alley]"> «ตรอก/ ซอย»
+<input id="JurLocation[New][Alley]" name="JurLocation[New][Alley]" value="" maxlength="" readonly="readonly" type="text">
+<label for="JurLocation[New][Road]"> «ถนน»
+<input id="JurLocation[New][Road]" name="JurLocation[New][Road]" value="" maxlength="" readonly="readonly" type="text">
+<label for="JurLocation[New][SubDistrict]"> «ตำบล/แขวง»
+<input id="JurLocation[New][SubDistrict]" name="JurLocation[New][SubDistrict]" value="" maxlength="" readonly="readonly" type="text">
+<label for="JurLocation[New][District]"> «อำเภอ/เขต»
+<input id="JurLocation[New][District]" name="JurLocation[New][District]" value="" maxlength="" readonly="readonly" type="text">
+<label for="JurLocation[New][Province]"> «จังหวัด»
+<input id="JurLocation[New][Province]" name="JurLocation[New][Province]" value="" maxlength="" readonly="readonly" type="text">
+<label for="JurLocation[New][PostCode]"> «รหัสไปรษณีย์ *»
+<input id="JurLocation[New][PostCode]" name="JurLocation[New][PostCode]" value="" maxlength="5" type="text">
+<label for="JurLocation[New][Branch_Code]"> «รหัสสาขา»
+<input id="JurLocation[New][Branch_Code]" name="JurLocation[New][Branch_Code]" value="00000" pattern="" maxlength="5" readonly="readonly" required="required" type="text">
+<label for="JurLocation[New][TelePhone]"> «เบอร์โทรศัพท์สำนักงาน»
+<input id="JurLocation[New][TelePhone]" name="JurLocation[New][TelePhone]" value="" maxlength="" type="text">
+<label for="JurLocation[New][Mobile]"> «เบอร์โทรศัพท์มือถือสำนักงาน»
+<input id="JurLocation[New][Mobile]" name="JurLocation[New][Mobile]" value="" maxlength="10" required="required" type="text">
+<label for="JurLocation[New][Email]"> «e-mail สำนักงาน»
+<input id="JurLocation[New][Email]" name="JurLocation[New][Email]" value="" maxlength="" required="required" type="text">
+<div id="JurLocation[Address_Receipt]-container">
+<fieldset data-controller="radio-buttons-field" data-radio-buttons-field-options-value="[{&quot;id&quot;:24200,&quot;label&quot;:&quot;สำนักงานใหญ่&">
+<legend> «ที่อยู่สำหรับออกใบเสร็จรับเงิน *»
+<input type="hidden" name="JurLocation[Address_Receipt]" value="">
+<input name="JurLocation[Address_Receipt]" data-show-selector="" data-action> «radio-buttons-field#optionChanged cable-ready:after-morph@document->radio-buttons-field#triggerChange turbo:submit-end@document->radio-buttons-field#sumbitEform»
+<label for="radio_button_24200"> «สำนักงานใหญ่»
+<input name="JurLocation[Address_Receipt]" data-show-selector="" data-action> «radio-buttons-field#optionChanged cable-ready:after-morph@document->radio-buttons-field#triggerChange turbo:submit-end@document->radio-buttons-field#sumbitEform»
+<label for="radio_button_24199"> «สำนักงานสาขา»
+<div data-controller="select-field" data-select-field-options-value="[]" data-class="">
+<label for="JurLocation[Address_Branch]"> «โปรดระบุสาขา* (กรณีเลือกที่อยู่สำหรับออกใบเสร็จรับเงินเป็นสำนักงานสาขา ท่านต้องเพิ่มข้อมูลสำนักงานสาขาก่อน)»
+<select id="JurLocation[Address_Branch]" name="JurLocation[Address_Branch]" data-select-field-target="select" data-action="change-&gt;select-field#optionChanged cable-ready:after-morp">
+<div data-controller="content-field">
+<div class~hidden>
+<input class~hidden name="JurLocation[New][Address_Type_ID]" value="1" type="hidden" id="hidden">
+<fieldset id="JurLocation_Other-container" data-eform-identity-types="Citizen Juristic">
+<div id="JurLocation_Other" data-controller="list-field" data-list-field-name-value="JurLocation_Other" data-list-field-min-value="" data-list-field-max-value="" id="JurLocation_Other" class~d-none>
+<h2> «สำนักงานสาขาอื่น นอกเหนือจากสำนักงานใหญ่»
+<div data-list-field-target="emptyStage">
+p «ไม่มีข้อมูล สำนักงานสาขาอื่น นอกเหนือจากสำนักงานใหญ่ ในขณะนี้ คุณสามารถเพิ่มข้อมูลสำนักงานสาขาอื่น นอกเหนือจากสำนักงานใหญ่» «โดยคลิกที่ปุ่ม "เพิ่มสำนักงานสาขาอื่น นอกเหนือจากสำนักงานใหญ่"»
+<table>
+<th> «ลำดับ»
+<th> «ที่อยู่เลขที่»
+<th> «หมู่ที่»
+<th> «อาคาร»
+<th> «ชั้น»
+<th> «ห้อง»
+<th> «หมู่บ้าน»
+<th> «ตรอก/ซอย»
+<th> «ถนน»
+<th> «ตำบล/แขวง»
+<th> «อำเภอ/เขต»
+<th> «จังหวัด»
+<th> «รหัสไปรษณีย์»
+<th> «เบอร์โทรศัพท์สำนักงาน»
+<th> «เบอร์โทรศัพท์มือถือสำนักงาน»
+<th> «e-mail สำนักงาน»
+<th> «รหัสสาขา»
+<th>
+<th>
+<button type="button" data-bs-toggle="modal" data-bs-target="#JurLocation_OtherModal" data-action> «list-field#clearRadio" data-list-field-target="addButton"> เพิ่มสำนักงานสาขาอื่น นอกเหนือจากสำนักงานใหญ่»
+<div class~modal id="JurLocation_OtherModal">
+<div class~modal,modal>
+<div class~modal>
+<div class~modal>
+<h1 class~modal id="JurLocation_OtherModalLabel"> «สำนักงานสาขาอื่น นอกเหนือจากสำนักงานใหญ่»
+<button type="button" data-bs-dismiss="modal">
+<div class~modal>
+<div id="JurLocation_RunningNo-container">
+<label for="JurLocation_RunningNo"> «ลำดับ»
+<input id="JurLocation_RunningNo" name="JurLocation_RunningNo" value="" maxlength="" readonly="readonly" disabled="disabled" type="text">
+<div id="JurLocation_AddrNo-container">
+<label for="JurLocation_AddrNo"> «ที่อยู่เลขที่»
+<input id="JurLocation_AddrNo" name="JurLocation_AddrNo" value="" maxlength="" disabled="disabled" required="required" type="text">
+<div id="JurLocation_Moo-container">
+<label for="JurLocation_Moo"> «หมู่ที่»
+<input id="JurLocation_Moo" name="JurLocation_Moo" value="" maxlength="" disabled="disabled" type="text">
+<div id="JurLocation_Building-container">
+<label for="JurLocation_Building"> «อาคาร»
+<input id="JurLocation_Building" name="JurLocation_Building" value="" maxlength="" disabled="disabled" type="text">
+<div id="JurLocation_Floor-container">
+<label for="JurLocation_Floor"> «ชั้น»
+<input id="JurLocation_Floor" name="JurLocation_Floor" value="" maxlength="" disabled="disabled" type="text">
+<div id="JurLocation_Room-container">
+<label for="JurLocation_Room"> «ห้อง»
+<input id="JurLocation_Room" name="JurLocation_Room" value="" maxlength="" disabled="disabled" type="text">
+<div id="JurLocation_Village-container">
+<label for="JurLocation_Village"> «หมู่บ้าน»
+<input id="JurLocation_Village" name="JurLocation_Village" value="" maxlength="" disabled="disabled" type="text">
+<div id="JurLocation_Allay-container">
+<label for="JurLocation_Allay"> «ตรอก/ซอย»
+<input id="JurLocation_Allay" name="JurLocation_Allay" value="" maxlength="" disabled="disabled" type="text">
+<div id="JurLocation_Road-container">
+<label for="JurLocation_Road"> «ถนน»
+<input id="JurLocation_Road" name="JurLocation_Road" value="" maxlength="" disabled="disabled" type="text">
+<div id="JurLocation_Tambon-container">
+<div data-controller="select-search-field" data-select-search-field-multiple-value="false" data-select-search-field-endpoint-url-value="/th/tambons.json" data-select-search-field-endpoint-value-key-value="tambon" data-select-search-field-endpoint-title-key-value="tambon" data-select-search-field-province-selector-value="select[name=&#39;JurLocation_Province&#39;]" data-select-search-field-amphoe-selector-value="select[name=&#39;JurLocation_Amphur&#39;]" data-select-search-field-onchange-endpoint-url-value="/postcodes.json" data-select-search-field-onchange-endpoint-value-key-value="postcode" data-select-search-field-onchange-endpoint-title-key-value="postcode" data-select-search-field-onchange-to-selector-value="input[name=&#39;JurLocation_Postcode&#39;]" data-select-search-field-devmode-value="false" data-select-search-field-lang-value="th" data-action="cable-ready:after-morph@document-&gt;select-search-field#ini" data-class="">
+<label for="JurLocation_Tambon"> «ตำบล/แขวง»
+<input disabled="disabled" name="JurLocation_Tambon" type="hidden" value="">
+<select id="JurLocation_Tambon" name="JurLocation_Tambon" data-select-search-field-target="select" disabled="disabled" required="required">
+<div id="JurLocation_Amphur-container">
+<div data-controller="select-search-field" data-select-search-field-multiple-value="false" data-select-search-field-endpoint-url-value="/th/amphoes.json" data-select-search-field-endpoint-value-key-value="amphoe" data-select-search-field-endpoint-title-key-value="amphoe" data-select-search-field-province-selector-value="select[name=&#39;JurLocation_Province&#39;]" data-select-search-field-onchange-endpoint-url-value="/tambons.json" data-select-search-field-onchange-endpoint-value-key-value="tambon" data-select-search-field-onchange-endpoint-title-key-value="tambon" data-select-search-field-onchange-to-selector-value="select[name=&#39;JurLocation_Tambon&#39;]" data-select-search-field-devmode-value="false" data-select-search-field-lang-value="th" data-action="cable-ready:after-morph@document-&gt;select-search-field#ini" data-class="">
+<label for="JurLocation_Amphur"> «อำเภอ/เขต»
+<input disabled="disabled" name="JurLocation_Amphur" type="hidden" value="">
+<select id="JurLocation_Amphur" name="JurLocation_Amphur" data-select-search-field-target="select" disabled="disabled" required="required">
+<div id="JurLocation_Province-container">
+<div data-controller="select-search-field" data-select-search-field-multiple-value="false" data-select-search-field-endpoint-url-value="/th/provinces.json" data-select-search-field-endpoint-value-key-value="province" data-select-search-field-endpoint-title-key-value="province" data-select-search-field-onchange-endpoint-url-value="/amphoes.json" data-select-search-field-onchange-endpoint-value-key-value="amphoe" data-select-search-field-onchange-endpoint-title-key-value="amphoe" data-select-search-field-onchange-to-selector-value="select[name=&#39;JurLocation_Amphur&#39;]" data-select-search-field-devmode-value="false" data-select-search-field-lang-value="th" data-action="cable-ready:after-morph@document-&gt;select-search-field#ini" data-class="">
+<label for="JurLocation_Province"> «จังหวัด»
+<input disabled="disabled" name="JurLocation_Province" type="hidden" value="">
+<select id="JurLocation_Province" name="JurLocation_Province" data-select-search-field-target="select" disabled="disabled" required="required">
+<div id="JurLocation_Postcode-container">
+<label for="JurLocation_Postcode"> «รหัสไปรษณีย์»
+<input id="JurLocation_Postcode" name="JurLocation_Postcode" value="" maxlength="" readonly="readonly" disabled="disabled" required="required" type="text">
+<div id="JurLocation_Telephone-container">
+<label for="JurLocation_Telephone"> «เบอร์โทรศัพท์สำนักงาน»
+<input id="JurLocation_Telephone" name="JurLocation_Telephone" value="" maxlength="" disabled="disabled" type="text">
+<div id="JurLocation_Mobile-container">
+<label for="JurLocation_Mobile"> «เบอร์โทรศัพท์มือถือสำนักงาน»
+<input id="JurLocation_Mobile" name="JurLocation_Mobile" value="" maxlength="10" disabled="disabled" required="required" type="text">
+<div id="JurLocation_Email-container">
+<label for="JurLocation_Email"> «e-mail สำนักงาน»
+<input id="JurLocation_Email" name="JurLocation_Email" disabled="disabled" required="required" type="email">
+<div id="Branch_Code-container">
+<label for="Branch_Code"> «รหัสสาขา»
+<input id="Branch_Code" name="Branch_Code" value="" pattern="" maxlength="5" disabled="disabled" required="required" type="text">
+<div id="Address_Type_ID-container">
+<div class~hidden>
+<input class~hidden name="Address_Type_ID" value="2" type="hidden" id="hidden">
+<div class~modal>
+<button type="button" data-bs-dismiss="modal" data-list-field-target="closeButton" data-action> «list-field#clearForm">ยกเลิก»
+<button type="button" data-action> «list-field#addItem">เพิ่มสำนักงานสาขาอื่น นอกเหนือจากสำนักงานใหญ่»
+<button type="button" class~d-none data-action> «list-field#addItem">แก้ไขสำนักงานสาขาอื่น นอกเหนือจากสำนักงานใหญ่»
+<fieldset id="JurLocation_Group_Amount-container" data-eform-identity-types="Citizen Juristic">
+<div data-controller="group-field" id="JurLocation_Group_Amount">
+<label for="JurLocation_TotalAmount"> «จำนวนที่ตั้งนิติบุคคล»
+<input id="JurLocation_TotalAmount" name="JurLocation_TotalAmount" value="" maxlength="" readonly="readonly" type="text">
+<fieldset id="Capital_Check-container" data-eform-identity-types="Citizen Juristic">
+<fieldset data-controller="checkbox-field" data-checkbox-field-checked-value="true" data-checkbox-field-default-value-value="1" data-checkbox-field-selector-value="#Capital">
+<input name="Capital_Check" type="hidden" value="0">
+<input id="Capital_Check" name="Capital_Check" data-action="change-&gt;checkbox-field#optionChanged cable-ready:after-mo" type="checkbox" value="1">
+<label for="Capital_Check"> «4. จำนวนทุนจดทะเบียน»
+<fieldset id="Capital-container" data-eform-identity-types="Citizen Juristic">
+<div data-controller="group-field" id="Capital" class~d-none disabled>
+<label for="Capital[OldAmount]"> «ทุนจดทะเบียนเดิม (บาท)»
+<input id="Capital[OldAmount]" name="Capital[OldAmount]" value="" max="" min="" readonly="readonly" disabled="disabled" type="text">
+<label for="Capital[NowAmount]"> «ทุนจดทะเบียนใหม่ (บาท)»
+<input id="Capital[NowAmount]" name="Capital[NowAmount]" value="" maxlength="" readonly="readonly" disabled="disabled" type="text">
+<fieldset id="ServiceType_Check-container" data-eform-identity-types="Citizen Juristic">
+<fieldset data-controller="checkbox-field" data-checkbox-field-checked-value="true" data-checkbox-field-default-value-value="1" data-checkbox-field-selector-value="#ServiceType">
+<input name="ServiceType_Check" type="hidden" value="0">
+<input id="ServiceType_Check" name="ServiceType_Check" data-action="change-&gt;checkbox-field#optionChanged cable-ready:after-mo" type="checkbox" value="1">
+<label for="ServiceType_Check"> «5. ประเภทของการให้บริการ (กรอกเฉพาะกรณีเปลี่ยนประเภทการให้บริการ)»
+<fieldset id="ServiceType-container" data-eform-identity-types="Citizen Juristic">
+<div data-controller="group-field" id="ServiceType" class~d-none disabled>
+<h2> «ประเภทการบริการเดิมที่ได้ลงทะเบียนไว้»
+<div id="ServiceType[OldData]-container">
+<fieldset data-controller="radio-buttons-field" data-radio-buttons-field-options-value="[{&quot;id&quot;:24201,&quot;label&quot;:&quot;ทำบัญชี&quot;">
+<legend> «ข้อมูลเดิม»
+<input type="hidden" name="ServiceType[OldData]" value="">
+<input name="ServiceType[OldData]" data-show-selector="" data-action> «radio-buttons-field#optionChanged cable-ready:after-morph@document->radio-buttons-field#triggerChange turbo:submit-end@document->radio-buttons-field#sumbitEform»
+<label for="radio_button_24201"> «ทำบัญชี»
+<input name="ServiceType[OldData]" data-show-selector="" data-action> «radio-buttons-field#optionChanged cable-ready:after-morph@document->radio-buttons-field#triggerChange turbo:submit-end@document->radio-buttons-field#sumbitEform»
+<label for="radio_button_32001"> «สอบบัญชี»
+<input name="ServiceType[OldData]" data-show-selector="" data-action> «radio-buttons-field#optionChanged cable-ready:after-morph@document->radio-buttons-field#triggerChange turbo:submit-end@document->radio-buttons-field#sumbitEform»
+<label for="radio_button_32002"> «ทำบัญชีและสอบบัญชี»
+<div id="ServiceType[NewData]-container">
+<fieldset data-controller="radio-buttons-field" data-radio-buttons-field-options-value="[{&quot;id&quot;:24202,&quot;label&quot;:&quot;ทำบัญชี&quot;">
+<legend> «ข้อมูลใหม่ *»
+<input type="hidden" name="ServiceType[NewData]" value="">
+<input name="ServiceType[NewData]" data-show-selector="" data-action> «radio-buttons-field#optionChanged cable-ready:after-morph@document->radio-buttons-field#triggerChange turbo:submit-end@document->radio-buttons-field#sumbitEform»
+<label for="radio_button_24202"> «ทำบัญชี»
+<input name="ServiceType[NewData]" data-show-selector="#groupConAudit" data-action> «radio-buttons-field#optionChanged cable-ready:after-morph@document->radio-buttons-field#triggerChange turbo:submit-end@document->radio-buttons-field#sumbitEform»
+<label for="radio_button_24203"> «สอบบัญชี»
+<input name="ServiceType[NewData]" data-show-selector="#groupConAudit" data-action> «radio-buttons-field#optionChanged cable-ready:after-morph@document->radio-buttons-field#triggerChange turbo:submit-end@document->radio-buttons-field#sumbitEform»
+<label for="radio_button_24204"> «ทำบัญชีและสอบบัญชี»
+<fieldset id="Manager_Check-container" data-eform-identity-types="Citizen Juristic">
+<fieldset data-controller="checkbox-field" data-checkbox-field-checked-value="true" data-checkbox-field-default-value-value="1" data-checkbox-field-selector-value="#Manager,#Manager_Group_Amount,#groupIdCardNation,#groupConA">
+<input name="Manager_Check" type="hidden" value="0">
+<input id="Manager_Check" name="Manager_Check" data-action="change-&gt;checkbox-field#optionChanged cable-ready:after-mo" type="checkbox" value="1">
+<label for="Manager_Check"> «6. รายนามกรรมการ/หุ้นส่วนผู้จัดการผู้มีอำนาจลงนามผูกพันนิติบุคคล (กรอกเฉพาะกรณีเปลี่ยนแปลงรายนามกรรมการ)»
+<fieldset id="Manager-container" data-eform-identity-types="Citizen Juristic">
+<div id="Manager" data-controller="list-field" data-list-field-name-value="Manager" data-list-field-min-value="" data-list-field-max-value="" id="Manager" class~d-none>
+<h2> «รายนามกรรมการ/หุ้นส่วนผู้จัดการผู้มีอำนาจลงนามผูกพันนิติบุคคล»
+<div data-list-field-target="emptyStage">
+p «ไม่มีข้อมูล รายนามกรรมการ/หุ้นส่วนผู้จัดการผู้มีอำนาจลงนามผูกพันนิติบุคคล ในขณะนี้ คุณสามารถเพิ่มข้อมูลรายนามกรรมการ/หุ้นส่วนผู้จัดการผู้มีอำนาจลงนามผูกพันนิติบ» «โดยคลิกที่ปุ่ม "เพิ่มรายนามกรรมการ/หุ้นส่วนผู้จัดการผู้มีอำนาจลงนามผูกพันนิติบุคคล"»
+<table>
+<th> «ลำดับ»
+<th> «คำนำหน้า»
+<th> «ชื่อ»
+<th> «นามสกุล»
+<th> «สัญชาติ»
+<th> «เลขที่บัตรประจำตัวประชาชน»
+<th> «เลขทะเบียนผู้สอบบัญชีรับอนุญาต»
+<th> «เลขที่หนังสือเดินทาง»
+<th> «กรรมการ/หุ้นส่วน ผู้จัดการผู้มีอำนาจลงนามผูกพันนิติบุคคล»
+<th>
+<th>
+<button type="button" data-bs-toggle="modal" data-bs-target="#ManagerModal" data-action> «list-field#clearRadio" data-list-field-target="addButton"> เพิ่มรายนามกรรมการ/หุ้นส่วนผู้จัดการผู้มีอำนาจลงนามผูกพันนิติบุคคล»
+<div class~modal id="ManagerModal">
+<div class~modal,modal>
+<div class~modal>
+<div class~modal>
+<h1 class~modal id="ManagerModalLabel"> «รายนามกรรมการ/หุ้นส่วนผู้จัดการผู้มีอำนาจลงนามผูกพันนิติบุคคล»
+<button type="button" data-bs-dismiss="modal">
+<div class~modal>
+<div id="Manager_RunningNo-container">
+<label for="Manager_RunningNo"> «ลำดับ»
+<input id="Manager_RunningNo" name="Manager_RunningNo" value="" maxlength="" readonly="readonly" disabled="disabled" type="text">
+<div id="Manager_Title-container">
+<label for="Manager_Title"> «คำนำหน้า»
+<input id="Manager_Title" name="Manager_Title" value="" maxlength="" readonly="readonly" disabled="disabled" type="text">
+<div id="Manager_Name-container">
+<label for="Manager_Name"> «ชื่อ»
+<input id="Manager_Name" name="Manager_Name" value="" maxlength="" readonly="readonly" disabled="disabled" type="text">
+<div id="Manager_LastName-container">
+<label for="Manager_LastName"> «นามสกุล»
+<input id="Manager_LastName" name="Manager_LastName" value="" maxlength="" readonly="readonly" disabled="disabled" type="text">
+<div id="Manager_Nationality-container">
+<div id="Manager_Nationality-container">
+<fieldset data-controller="radio-buttons-field" data-radio-buttons-field-options-value="[{&quot;id&quot;:24206,&quot;label&quot;:&quot;สัญชาติไทย&qu">
+<legend> «สัญชาติ *»
+<input type="hidden" name="Manager_Nationality" value="">
+<input name="Manager_Nationality" data-show-selector="#Manager_CitizenId-container,#Manager_License-container" data-action> «radio-buttons-field#optionChanged cable-ready:after-morph@document->radio-buttons-field#triggerChange turbo:submit-end@document->radio-buttons-field#sumbitEform»
+<label for="radio_button_24206"> «สัญชาติไทย»
+<input name="Manager_Nationality" data-show-selector="#Manager_Passport-container,#separate_2-container" data-action> «radio-buttons-field#optionChanged cable-ready:after-morph@document->radio-buttons-field#triggerChange turbo:submit-end@document->radio-buttons-field#sumbitEform»
+<label for="radio_button_24205"> «ต่างด้าว»
+<div id="Manager_CitizenId-container">
+<label for="Manager_CitizenId"> «เลขที่บัตรประจำตัวประชาชน»
+<input id="Manager_CitizenId" name="Manager_CitizenId" value="" maxlength="13" disabled="disabled" required="required" type="text">
+<div id="Manager_License-container">
+<label for="Manager_License"> «เลขทะเบียนผู้สอบบัญชีรับอนุญาต»
+<input id="Manager_License" name="Manager_License" value="" pattern="^(?!00000$)\d{5}$" maxlength="5" disabled="disabled" type="text">
+<div id="Manager_Passport-container" class~d-none>
+<label for="Manager_Passport"> «เลขที่หนังสือเดินทาง»
+<input id="Manager_Passport" name="Manager_Passport" value="0" pattern="" maxlength="20" disabled="disabled" required="required" type="text">
+<div id="separate_131-container">
+<div id="Manager_Manager-container">
+<fieldset data-controller="checkbox-field" data-checkbox-field-checked-value="true" data-checkbox-field-default-value-value="1" data-checkbox-field-selector-value="">
+<input name="Manager_Manager" disabled="disabled" type="hidden" value="0">
+<input id="Manager_Manager" name="Manager_Manager" data-action="change-&gt;checkbox-field#optionChanged cable-ready:after-mo" disabled="disabled" type="checkbox" value="1">
+<label for="Manager_Manager"> «กรรมการ/หุ้นส่วน ผู้จัดการผู้มีอำนาจลงนามผูกพันนิติบุคคล»
+<div id="Person_Type_ID-container">
+<div class~hidden>
+<input class~hidden name="Person_Type_ID" value="1" type="hidden" id="hidden">
+<div class~modal>
+<button type="button" data-bs-dismiss="modal" data-list-field-target="closeButton" data-action> «list-field#clearForm">ยกเลิก»
+<button type="button" data-action> «list-field#addItem">เพิ่มรายนามกรรมการ/หุ้นส่วนผู้จัดการผู้มีอำนาจลงนามผูกพันนิติบุคคล»
+<button type="button" class~d-none data-action> «list-field#addItem">แก้ไขรายนามกรรมการ/หุ้นส่วนผู้จัดการผู้มีอำนาจลงนามผูกพันนิติบุคคล»
+<fieldset id="Manager_Group_Amount-container" data-eform-identity-types="Citizen Juristic">
+<div data-controller="group-field" id="Manager_Group_Amount" class~d-none disabled>
+<label for="Manager_TotalAmount"> «จำนวนกรรมการ/หุ้นส่วนผู้จัดการผู้มีอำนาจลงนามผูกพันนิติบุคคล (คน)»
+<input id="Manager_TotalAmount" name="Manager_TotalAmount" value="" maxlength="" readonly="readonly" disabled="disabled" type="text">
+<fieldset id="groupIdCardNation-container" data-eform-identity-types="Citizen Juristic">
+<div data-controller="group-field" id="groupIdCardNation" class~d-none disabled>
+<label for="conIdCardNation"> «เงื่อนไข เลขที่บัตรประชาชน และสัญชาติ»
+<input id="conIdCardNation" name="conIdCardNation" value="" maxlength="" readonly="readonly" disabled="disabled" required="required" type="text">
+<fieldset id="groupConAudit-container" data-eform-identity-types="Citizen Juristic">
+<div data-controller="group-field" id="groupConAudit" class~d-none disabled>
+<label for="conAudit"> «เงื่อนไขผู้สอบบัญชี»
+<input id="conAudit" name="conAudit" value="" maxlength="" readonly="readonly" disabled="disabled" required="required" type="text">
+<fieldset id="groupConNumber-container" data-eform-identity-types="Citizen Juristic">
+<div data-controller="group-field" id="groupConNumber">
+<label for="conNumber"> «เงื่อนไข กรรมการหุ้นส่วน»
+<input id="conNumber" name="conNumber" value="" maxlength="" readonly="readonly" required="required" type="text">
+<fieldset id="Accountant_Check-container" data-eform-identity-types="Citizen Juristic">
+<fieldset data-controller="checkbox-field" data-checkbox-field-checked-value="true" data-checkbox-field-default-value-value="1" data-checkbox-field-selector-value="#Accountant,#Accountant_Group_Amount">
+<input name="Accountant_Check" type="hidden" value="0">
+<input id="Accountant_Check" name="Accountant_Check" data-action="change-&gt;checkbox-field#optionChanged cable-ready:after-mo" type="checkbox" value="1">
+<label for="Accountant_Check"> «7. รายนามผู้ทำบัญชีที่รับผิดชอบในฐานะผู้ทำบัญชีของนิติบุคคล (กรอกเฉพาะกรณีเปลี่ยนแปลงรายนามผู้ทำบัญชี)»
+<fieldset id="Accountant-container" data-eform-identity-types="Citizen Juristic">
+<div id="Accountant" data-controller="list-field" data-list-field-name-value="Accountant" data-list-field-min-value="" data-list-field-max-value="" id="Accountant">
+<h2> «รายนามผู้ทำบัญชีที่รับผิดชอบในฐานะผู้ทำบัญชีของนิติบุคคล»
+<div data-list-field-target="emptyStage">
+p «ไม่มีข้อมูล รายนามผู้ทำบัญชีที่รับผิดชอบในฐานะผู้ทำบัญชีของนิติบุคคล ในขณะนี้ คุณสามารถเพิ่มข้อมูลรายนามผู้ทำบัญชีที่รับผิดชอบในฐานะผู้ทำบัญชีของนิติบุคคล» «โดยคลิกที่ปุ่ม "เพิ่มรายนามผู้ทำบัญชีที่รับผิดชอบในฐานะผู้ทำบัญชีของนิติบุคคล"»
+<table>
+<th> «ลำดับ»
+<th> «คำนำหน้า»
+<th> «ชื่อ»
+<th> «นามสกุล»
+<th> «เลขที่บัตรประจำตัวประชาชน»
+<th> «การปฏิบัติงาน»
+<th>
+<th>
+<button type="button" data-bs-toggle="modal" data-bs-target="#AccountantModal" data-action> «list-field#clearRadio" data-list-field-target="addButton"> เพิ่มรายนามผู้ทำบัญชีที่รับผิดชอบในฐานะผู้ทำบัญชีของนิติบุคคล»
+<div class~modal id="AccountantModal">
+<div class~modal,modal>
+<div class~modal>
+<div class~modal>
+<h1 class~modal id="AccountantModalLabel"> «รายนามผู้ทำบัญชีที่รับผิดชอบในฐานะผู้ทำบัญชีของนิติบุคคล»
+<button type="button" data-bs-dismiss="modal">
+<div class~modal>
+<div id="Accountant_RunningNo-container">
+<label for="Accountant_RunningNo"> «ลำดับ»
+<input id="Accountant_RunningNo" name="Accountant_RunningNo" value="" maxlength="" readonly="readonly" disabled="disabled" type="text">
+<div id="Accountant_title-container">
+<div data-controller="title-field">
+<label for="Accountant_title"> «คำนำหน้า»
+<select id="Accountant_title" name="Accountant_title" data-action="change-&gt;title-field#changeTitle" disabled="disabled" required="required">
+<option value="">
+<option value="นาย"> «นาย»
+<option value="นางสาว"> «นางสาว»
+<option value="นาง"> «นาง»
+<option value="ว่าที่ร้อยตรี"> «ว่าที่ร้อยตรี»
+<option value="Sir"> «Sir»
+<option value="Doctor"> «Doctor»
+<option value="Professor"> «Professor»
+<option value="พ.ต."> «พ.ต.»
+<option value="พ.ท."> «พ.ท.»
+<option value="พ.อ."> «พ.อ.»
+<option value="พ.จ.อ."> «พ.จ.อ.»
+<option value="จ.ส.ต."> «จ.ส.ต.»
+<option value="ร้อยตรี"> «ร้อยตรี»
+<option value="ส.ต."> «ส.ต.»
+<option value="พลฯ"> «พลฯ»
+<option value="ร.ต.ต."> «ร.ต.ต.»
+<option value="พ.อ.อ."> «พ.อ.อ.»
+<option value="ร้อยตำรวจโท"> «ร้อยตำรวจโท»
+<option value="จ่าอากาศเอก"> «จ่าอากาศเอก»
+<option value="ร.ต"> «ร.ต»
+<option value="ด.ต."> «ด.ต.»
+<option value="น.อ."> «น.อ.»
+<option value="จ.อ."> «จ.อ.»
+<option value="บริษัท"> «บริษัท»
+<option value="ร.ท."> «ร.ท.»
+<option value="ร.ต.อ"> «ร.ต.อ»
+<option value="พ.ต.อ."> «พ.ต.อ.»
+<option value="อื่นๆ"> «อื่นๆ»
+<div data-title-field-target="titleOther" class~d-none>
+<input name="Accountant_title" disabled="disabled" type="text" id="title">
+<div id="Accountant_Name-container">
+<label for="Accountant_Name"> «ชื่อ»
+<input id="Accountant_Name" name="Accountant_Name" value="" pattern="" maxlength="" disabled="disabled" required="required" type="text">
+<div id="Accountant_Lastname-container">
+<label for="Accountant_Lastname"> «นามสกุล»
+<input id="Accountant_Lastname" name="Accountant_Lastname" value="" pattern="" maxlength="" disabled="disabled" required="required" type="text">
+<div id="Accountant_CitizenId-container">
+<label for="Accountant_CitizenId"> «เลขที่บัตรประจำตัวประชาชน»
+<input id="Accountant_CitizenId" name="Accountant_CitizenId" value="" maxlength="13" disabled="disabled" required="required" type="text">
+<div id="separate_6-container">
+<div id="Accountant_Working-container">
+<div id="Accountant_Working-container">
+<fieldset data-controller="radio-buttons-field" data-radio-buttons-field-options-value="[{&quot;id&quot;:24218,&quot;label&quot;:&quot;เต็มเวลา&quot">
+<legend> «การปฏิบัติงาน *»
+<input type="hidden" name="Accountant_Working" value="">
+<input name="Accountant_Working" data-show-selector="" data-action> «radio-buttons-field#optionChanged cable-ready:after-morph@document->radio-buttons-field#triggerChange turbo:submit-end@document->radio-buttons-field#sumbitEform»
+<label for="radio_button_24218"> «เต็มเวลา»
+<input name="Accountant_Working" data-show-selector="" data-action> «radio-buttons-field#optionChanged cable-ready:after-morph@document->radio-buttons-field#triggerChange turbo:submit-end@document->radio-buttons-field#sumbitEform»
+<label for="radio_button_24219"> «บางเวลา»
+<div id="Person_Type_ID-container" class~d-none>
+<div class~hidden>
+<input class~hidden name="Person_Type_ID" value="3" type="hidden" id="hidden">
+<div class~modal>
+<button type="button" data-bs-dismiss="modal" data-list-field-target="closeButton" data-action> «list-field#clearForm">ยกเลิก»
+<button type="button" data-action> «list-field#addItem">เพิ่มรายนามผู้ทำบัญชีที่รับผิดชอบในฐานะผู้ทำบัญชีของนิติบุคคล»
+<button type="button" class~d-none data-action> «list-field#addItem">แก้ไขรายนามผู้ทำบัญชีที่รับผิดชอบในฐานะผู้ทำบัญชีของนิติบุคคล»
+<fieldset id="Accountant_Group_Amount-container" data-eform-identity-types="Citizen Juristic">
+<div data-controller="group-field" id="Accountant_Group_Amount" class~d-none disabled>
+<label for="Accountant_TotalAmount"> «จำนวนผู้ทำบัญชีที่รับผิดชอบในฐานะผู้ทำบัญชีของนิติบุคคล (คน)»
+<input id="Accountant_TotalAmount" name="Accountant_TotalAmount" value="" maxlength="" readonly="readonly" disabled="disabled" type="text">
+<fieldset id="HeadOffice_Check-container" data-eform-identity-types="Citizen Juristic">
+<fieldset data-controller="checkbox-field" data-checkbox-field-checked-value="true" data-checkbox-field-default-value-value="1" data-checkbox-field-selector-value="#HeadOffice">
+<input name="HeadOffice_Check" type="hidden" value="0">
+<input id="HeadOffice_Check" name="HeadOffice_Check" data-action="change-&gt;checkbox-field#optionChanged cable-ready:after-mo" type="checkbox" value="1">
+<label for="HeadOffice_Check"> «8. หัวหน้าสำนักงาน (สำหรับนิติบุคคลที่ให้บริการด้านสอบบัญชี) (กรอกเฉพาะกรณีเปลี่ยนแปลงรายนามหัวหน้าสำนักงาน)»
+<fieldset id="HeadOffice-container" data-eform-identity-types="Citizen Juristic">
+<div data-controller="group-field" id="HeadOffice" class~d-none disabled>
+<div data-controller="title-field">
+<label for="HeadOffice[Title0]"> «คำนำหน้า *»
+<select id="HeadOffice[Title0]" name="HeadOffice[Title0]" data-action="change-&gt;title-field#changeTitle" disabled="disabled">
+<option value="">
+<option value="นาย"> «นาย»
+<option value="นางสาว"> «นางสาว»
+<option value="นาง"> «นาง»
+<option value="ว่าที่ร้อยตรี"> «ว่าที่ร้อยตรี»
+<option value="Sir"> «Sir»
+<option value="Doctor"> «Doctor»
+<option value="Professor"> «Professor»
+<option value="พ.ต."> «พ.ต.»
+<option value="พ.ท."> «พ.ท.»
+<option value="พ.อ."> «พ.อ.»
+<option value="พ.จ.อ."> «พ.จ.อ.»
+<option value="จ.ส.ต."> «จ.ส.ต.»
+<option value="ร้อยตรี"> «ร้อยตรี»
+<option value="ส.ต."> «ส.ต.»
+<option value="พลฯ"> «พลฯ»
+<option value="ร.ต.ต."> «ร.ต.ต.»
+<option value="พ.อ.อ."> «พ.อ.อ.»
+<option value="ร้อยตำรวจโท"> «ร้อยตำรวจโท»
+<option value="จ่าอากาศเอก"> «จ่าอากาศเอก»
+<option value="ร.ต"> «ร.ต»
+<option value="ด.ต."> «ด.ต.»
+<option value="น.อ."> «น.อ.»
+<option value="จ.อ."> «จ.อ.»
+<option value="บริษัท"> «บริษัท»
+<option value="ร.ท."> «ร.ท.»
+<option value="ร.ต.อ"> «ร.ต.อ»
+<option value="พ.ต.อ."> «พ.ต.อ.»
+<option value="อื่นๆ"> «อื่นๆ»
+<div data-title-field-target="titleOther" class~d-none>
+<input name="HeadOffice[Title0]" disabled="disabled" type="text" id="title">
+<label for="HeadOffice[Name]"> «ชื่อ *»
+<input id="HeadOffice[Name]" name="HeadOffice[Name]" value="" pattern="" maxlength="" disabled="disabled" type="text">
+<label for="HeadOffice[Lastname]"> «นามสกุล *»
+<input id="HeadOffice[Lastname]" name="HeadOffice[Lastname]" value="" pattern="" maxlength="" disabled="disabled" type="text">
+<label for="HeadOffice[NumberAccount]"> «เลขทะเบียนผู้สอบบัญชีรับอนุญาต *»
+<input id="HeadOffice[NumberAccount]" name="HeadOffice[NumberAccount]" value="" maxlength="5" disabled="disabled" type="text">
+<label for="HeadOffice[CitizenId]"> «เลขที่บัตรประจำตัวประชาชน *»
+<input id="HeadOffice[CitizenId]" name="HeadOffice[CitizenId]" value="" maxlength="13" disabled="disabled" type="text">
+<div id="HeadOffice[WorkingTime]-container">
+<fieldset data-controller="radio-buttons-field" data-radio-buttons-field-options-value="[{&quot;id&quot;:24222,&quot;label&quot;:&quot;เต็มเวลา&quot">
+<legend> «การปฏิบัติงาน *»
+<input type="hidden" name="HeadOffice[WorkingTime]" value="">
+<input name="HeadOffice[WorkingTime]" data-show-selector="Accountant[HeadOffice][FullTime]" data-action> «radio-buttons-field#optionChanged cable-ready:after-morph@document->radio-buttons-field#triggerChange turbo:submit-end@document->radio-buttons-field#sumbitEform»
+<label for="radio_button_24222"> «เต็มเวลา»
+<input name="HeadOffice[WorkingTime]" data-show-selector="Accountant[HeadOffice][SomeTime]" data-action> «radio-buttons-field#optionChanged cable-ready:after-morph@document->radio-buttons-field#triggerChange turbo:submit-end@document->radio-buttons-field#sumbitEform»
+<label for="radio_button_24223"> «บางเวลา»
+<div class~hidden>
+<input class~hidden name="HeadOffice[Person_Type_ID]" value="2" type="hidden" id="hidden">
+<div class~hidden>
+<input class~hidden name="HeadOffice[Title]" value="" type="hidden" id="hidden">
+<fieldset id="Examiner_Check-container" data-eform-identity-types="Citizen Juristic">
+<fieldset data-controller="checkbox-field" data-checkbox-field-checked-value="true" data-checkbox-field-default-value-value="1" data-checkbox-field-selector-value="#Examiner_Group_Amount,#Examiner">
+<input name="Examiner_Check" type="hidden" value="0">
+<input id="Examiner_Check" name="Examiner_Check" data-action="change-&gt;checkbox-field#optionChanged cable-ready:after-mo" type="checkbox" value="1">
+<label for="Examiner_Check"> «9. รายนามผู้สอบบัญชีรับอนุญาตที่ลงลายมือชื่อในฐานะผู้สอบบัญชีรับอนุญาตของนิติบุคคล (กรอกเฉพาะกรณีเปลี่ยนแปลงรายนามผู้สอบบัญชี)»
+<fieldset id="Examiner-container" data-eform-identity-types="Citizen Juristic">
+<div id="Examiner" data-controller="list-field" data-list-field-name-value="Examiner" data-list-field-min-value="" data-list-field-max-value="" id="Examiner">
+<h2> «รายนามผู้สอบบัญชีรับอนุญาตที่ลงลายมือชื่อในฐานะผู้สอบบัญชีรับอนุญาตของนิติบุคคล»
+<div data-list-field-target="emptyStage">
+p «ไม่มีข้อมูล รายนามผู้สอบบัญชีรับอนุญาตที่ลงลายมือชื่อในฐานะผู้สอบบัญชีรับอนุญาตของนิติบุคคล ในขณะนี้ คุณสามารถเพิ่มข้อมูลรายนามผู้สอบบัญชีรับอนุญาตที่ลงลายมือชื» «โดยคลิกที่ปุ่ม "เพิ่มรายนามผู้สอบบัญชีรับอนุญาตที่ลงลายมือชื่อในฐานะผู้สอบบัญชีรับอนุญาตของนิติบุคคล"»
+<table>
+<th> «ลำดับ»
+<th> «คำนำหน้าชื่อ»
+<th> «ชื่อ»
+<th> «นามสกุล»
+<th> «เลขที่บัตรประจำประชาชน»
+<th> «เลขทะเบียนผู้สอบบัญชีรับอนุญาต»
+<th> «การปฏิบัติงาน»
+<th>
+<th>
+<button type="button" data-bs-toggle="modal" data-bs-target="#ExaminerModal" data-action> «list-field#clearRadio" data-list-field-target="addButton"> เพิ่มรายนามผู้สอบบัญชีรับอนุญาตที่ลงลายมือชื่อในฐานะผู้สอบบัญชีรับอนุญาตของนิติบุคคล»
+<div class~modal id="ExaminerModal">
+<div class~modal,modal>
+<div class~modal>
+<div class~modal>
+<h1 class~modal id="ExaminerModalLabel"> «รายนามผู้สอบบัญชีรับอนุญาตที่ลงลายมือชื่อในฐานะผู้สอบบัญชีรับอนุญาตของนิติบุคคล»
+<button type="button" data-bs-dismiss="modal">
+<div class~modal>
+<div id="Examiner_RunningNo-container">
+<label for="Examiner_RunningNo"> «ลำดับ»
+<input id="Examiner_RunningNo" name="Examiner_RunningNo" value="" maxlength="" readonly="readonly" disabled="disabled" type="text">
+<div id="Examiner_Title-container">
+<div data-controller="title-field">
+<label for="Examiner_Title"> «คำนำหน้าชื่อ»
+<select id="Examiner_Title" name="Examiner_Title" data-action="change-&gt;title-field#changeTitle" disabled="disabled" required="required">
+<option value="">
+<option value="นาย"> «นาย»
+<option value="นางสาว"> «นางสาว»
+<option value="นาง"> «นาง»
+<option value="ว่าที่ร้อยตรี"> «ว่าที่ร้อยตรี»
+<option value="Sir"> «Sir»
+<option value="Doctor"> «Doctor»
+<option value="Professor"> «Professor»
+<option value="พ.ต."> «พ.ต.»
+<option value="พ.ท."> «พ.ท.»
+<option value="พ.อ."> «พ.อ.»
+<option value="พ.จ.อ."> «พ.จ.อ.»
+<option value="จ.ส.ต."> «จ.ส.ต.»
+<option value="ร้อยตรี"> «ร้อยตรี»
+<option value="ส.ต."> «ส.ต.»
+<option value="พลฯ"> «พลฯ»
+<option value="ร.ต.ต."> «ร.ต.ต.»
+<option value="พ.อ.อ."> «พ.อ.อ.»
+<option value="ร้อยตำรวจโท"> «ร้อยตำรวจโท»
+<option value="จ่าอากาศเอก"> «จ่าอากาศเอก»
+<option value="ร.ต"> «ร.ต»
+<option value="ด.ต."> «ด.ต.»
+<option value="น.อ."> «น.อ.»
+<option value="จ.อ."> «จ.อ.»
+<option value="บริษัท"> «บริษัท»
+<option value="ร.ท."> «ร.ท.»
+<option value="ร.ต.อ"> «ร.ต.อ»
+<option value="พ.ต.อ."> «พ.ต.อ.»
+<option value="อื่นๆ"> «อื่นๆ»
+<div data-title-field-target="titleOther" class~d-none>
+<input name="Examiner_Title" disabled="disabled" type="text" id="title">
+<div id="Examiner_Name-container">
+<label for="Examiner_Name"> «ชื่อ»
+<input id="Examiner_Name" name="Examiner_Name" value="" pattern="" maxlength="" disabled="disabled" required="required" type="text">
+<div id="Examiner_LastName-container">
+<label for="Examiner_LastName"> «นามสกุล»
+<input id="Examiner_LastName" name="Examiner_LastName" value="" pattern="" maxlength="" disabled="disabled" required="required" type="text">
+<div id="Examiner_CitizenId-container">
+<label for="Examiner_CitizenId"> «เลขที่บัตรประจำประชาชน»
+<input id="Examiner_CitizenId" name="Examiner_CitizenId" value="" maxlength="13" disabled="disabled" required="required" type="text">
+<div id="Examiner_License-container">
+<label for="Examiner_License"> «เลขทะเบียนผู้สอบบัญชีรับอนุญาต»
+<input id="Examiner_License" name="Examiner_License" value="" maxlength="5" disabled="disabled" required="required" type="text">
+<div id="Examiner_Working-container">
+<div id="Examiner_Working-container">
+<fieldset data-controller="radio-buttons-field" data-radio-buttons-field-options-value="[{&quot;id&quot;:24226,&quot;label&quot;:&quot;เต็มเวลา&quot">
+<legend> «การปฏิบัติงาน *»
+<input type="hidden" name="Examiner_Working" value="">
+<input name="Examiner_Working" data-show-selector="" data-action> «radio-buttons-field#optionChanged cable-ready:after-morph@document->radio-buttons-field#triggerChange turbo:submit-end@document->radio-buttons-field#sumbitEform»
+<label for="radio_button_24226"> «เต็มเวลา»
+<input name="Examiner_Working" data-show-selector="" data-action> «radio-buttons-field#optionChanged cable-ready:after-morph@document->radio-buttons-field#triggerChange turbo:submit-end@document->radio-buttons-field#sumbitEform»
+<label for="radio_button_24227"> «บางเวลา»
+<div id="Person_Type_ID-container">
+<div class~hidden>
+<input class~hidden name="Person_Type_ID" value="5" type="hidden" id="hidden">
+<div class~modal>
+<button type="button" data-bs-dismiss="modal" data-list-field-target="closeButton" data-action> «list-field#clearForm">ยกเลิก»
+<button type="button" data-action> «list-field#addItem">เพิ่มรายนามผู้สอบบัญชีรับอนุญาตที่ลงลายมือชื่อในฐานะผู้สอบบัญชีรับอนุญาตของนิติบุคคล»
+<button type="button" class~d-none data-action> «list-field#addItem">แก้ไขรายนามผู้สอบบัญชีรับอนุญาตที่ลงลายมือชื่อในฐานะผู้สอบบัญชีรับอนุญาตของนิติบุคคล»
+<fieldset id="Examiner_Group_Amount-container" data-eform-identity-types="Citizen Juristic">
+<div data-controller="group-field" id="Examiner_Group_Amount">
+<label for="Examiner_TotalAmount"> «จำนวนผู้สอบบัญชีรับอนุญาตที่ลงลายมือชื่อในฐานะผู้สอบบัญชีรับอนุญาตนิติบุคคล (คน)»
+<input id="Examiner_TotalAmount" name="Examiner_TotalAmount" value="" maxlength="" readonly="readonly" type="text">
+<fieldset id="Beyond_Check-container" data-eform-identity-types="Citizen Juristic">
+<fieldset data-controller="checkbox-field" data-checkbox-field-checked-value="true" data-checkbox-field-default-value-value="1" data-checkbox-field-selector-value="#Beyond,#BeyondSpecialist,#Beyond_Group_Amount">
+<input name="Beyond_Check" type="hidden" value="0">
+<input id="Beyond_Check" name="Beyond_Check" data-action="change-&gt;checkbox-field#optionChanged cable-ready:after-mo" type="checkbox" value="1">
+<label for="Beyond_Check"> «10. ข้อมูลเกี่ยวกับพนักงานและผู้สอบบัญชีภายใต้สำนักงานสอบบัญชี ณ วันที่สิ้นสุดรอบบัญชี (ย้อนหลัง 1 ปี)»
+<fieldset id="Beyond-container" data-eform-identity-types="Citizen Juristic">
+<div data-controller="group-field" id="Beyond" class~d-none disabled>
+<h2> «รายละเอียดพนักงานในแต่ละตำแหน่งที่ลงทะเบียนไว้ (เดิม)»
+<label for="Beyond[Lastdata][AmountPartner]"> «หุ้นส่วน (Partner) (ราย)»
+<input id="Beyond[Lastdata][AmountPartner]" name="Beyond[Lastdata][AmountPartner]" value="0" maxlength="" readonly="readonly" disabled="disabled" type="text">
+<label for="Beyond[Lastdata][AmountSeniorManager]"> «ผู้จัดการอาวุโส (Senior Manager) (ราย)»
+<input id="Beyond[Lastdata][AmountSeniorManager]" name="Beyond[Lastdata][AmountSeniorManager]" value="0" maxlength="" readonly="readonly" disabled="disabled" type="text">
+<label for="Beyond[Lastdata][AmountManager]"> «ผู้จัดการ (Manager) (ราย)»
+<input id="Beyond[Lastdata][AmountManager]" name="Beyond[Lastdata][AmountManager]" value="0" maxlength="" readonly="readonly" disabled="disabled" type="text">
+<label for="Beyond[Lastdata][AmountSenior]"> «ผู้ช่วยผู้สอบบัญชีอาวุโส (Senior) (ราย)»
+<input id="Beyond[Lastdata][AmountSenior]" name="Beyond[Lastdata][AmountSenior]" value="0" maxlength="" readonly="readonly" disabled="disabled" type="text">
+<label for="Beyond[Lastdata][AmountJunior]"> «ผู้ช่วยสอบบัญชี (Junior) (ราย)»
+<input id="Beyond[Lastdata][AmountJunior]" name="Beyond[Lastdata][AmountJunior]" value="0" maxlength="" readonly="readonly" disabled="disabled" type="text">
+<label for="Beyond[Lastdata][AmountOther]"> «ผู้เชี่ยวชาญด้านอื่น ๆ»
+<input id="Beyond[Lastdata][AmountOther]" name="Beyond[Lastdata][AmountOther]" value="0" maxlength="" readonly="readonly" disabled="disabled" type="text">
+<label for="Beyond[Lastdata][TotalAmount]"> «รวมทั้งหมด»
+<input id="Beyond[Lastdata][TotalAmount]" name="Beyond[Lastdata][TotalAmount]" value="0" maxlength="" readonly="readonly" disabled="disabled" type="text">
+<h2> «รายละเอียดพนักงานในแต่ละตำแหน่งที่ลงทะเบียนไว้ (ใหม่)»
+<label for="Beyond[Editdata][AmountPartner]"> «หุ้นส่วน (Partner) (ราย)»
+<input id="Beyond[Editdata][AmountPartner]" name="Beyond[Editdata][AmountPartner]" value="0" maxlength="" disabled="disabled" required="required" type="text">
+<label for="Beyond[Editdata][AmountSeniorManager]"> «ผู้จัดการอาวุโส (Senior Manager) (ราย)»
+<input id="Beyond[Editdata][AmountSeniorManager]" name="Beyond[Editdata][AmountSeniorManager]" value="0" maxlength="" disabled="disabled" required="required" type="text">
+<label for="Beyond[Editdata][AmountManager]"> «ผู้จัดการ (Manager) (ราย)»
+<input id="Beyond[Editdata][AmountManager]" name="Beyond[Editdata][AmountManager]" value="0" maxlength="" disabled="disabled" required="required" type="text">
+<label for="Beyond[Editdata][AmountSenior]"> «ผู้ช่วยผู้สอบบัญชีอาวุโส (Senior) (ราย)»
+<input id="Beyond[Editdata][AmountSenior]" name="Beyond[Editdata][AmountSenior]" value="0" maxlength="" disabled="disabled" required="required" type="text">
+<label for="Beyond[Editdata][AmountJunior]"> «ผู้ช่วยสอบบัญชี (Junior) (ราย)»
+<input id="Beyond[Editdata][AmountJunior]" name="Beyond[Editdata][AmountJunior]" value="0" maxlength="" disabled="disabled" required="required" type="text">
+<label for="Beyond[Editdata][AmountOther]"> «ผู้เชี่ยวชาญด้านอื่น ๆ»
+<input id="Beyond[Editdata][AmountOther]" name="Beyond[Editdata][AmountOther]" value="0" maxlength="" readonly="readonly" disabled="disabled" type="text">
+<label for="Beyond[Editdata][TotalAmount]"> «รวมทั้งหมด»
+<input id="Beyond[Editdata][TotalAmount]" name="Beyond[Editdata][TotalAmount]" value="0" maxlength="" readonly="readonly" disabled="disabled" type="text">
+<fieldset id="BeyondSpecialist-container" data-eform-identity-types="Citizen Juristic">
+<div id="BeyondSpecialist" data-controller="list-field" data-list-field-name-value="BeyondSpecialist" data-list-field-min-value="" data-list-field-max-value="" id="BeyondSpecialist" class~d-none>
+<h2> «รายนามผู้เชี่ยวชาญด้านต่าง ๆ»
+<div data-list-field-target="emptyStage">
+p «ไม่มีข้อมูล รายนามผู้เชี่ยวชาญด้านต่าง ๆ ในขณะนี้ คุณสามารถเพิ่มข้อมูลรายนามผู้เชี่ยวชาญด้านต่าง ๆ» «โดยคลิกที่ปุ่ม "เพิ่มรายนามผู้เชี่ยวชาญด้านต่าง ๆ"»
+<table>
+<th> «ลำดับ»
+<th> «ผู้เชี่ยวชาญด้าน (โปรดระบุ)»
+<th> «จำนวน»
+<th>
+<th>
+<button type="button" data-bs-toggle="modal" data-bs-target="#BeyondSpecialistModal" data-action> «list-field#clearRadio" data-list-field-target="addButton"> เพิ่มรายนามผู้เชี่ยวชาญด้านต่าง ๆ»
+<div class~modal id="BeyondSpecialistModal">
+<div class~modal,modal>
+<div class~modal>
+<div class~modal>
+<h1 class~modal id="BeyondSpecialistModalLabel"> «รายนามผู้เชี่ยวชาญด้านต่าง ๆ»
+<button type="button" data-bs-dismiss="modal">
+<div class~modal>
+<div id="BeyondSpecialist_RunningNo-container">
+<label for="BeyondSpecialist_RunningNo"> «ลำดับ»
+<input id="BeyondSpecialist_RunningNo" name="BeyondSpecialist_RunningNo" value="" maxlength="" readonly="readonly" disabled="disabled" type="text">
+<div id="BeyondSpecialist_Special-container">
+<label for="BeyondSpecialist_Special"> «ผู้เชี่ยวชาญด้าน (โปรดระบุ)»
+<input id="BeyondSpecialist_Special" name="BeyondSpecialist_Special" value="" maxlength="" disabled="disabled" required="required" type="text">
+<div id="BeyondSpecialist_Total-container">
+<label for="BeyondSpecialist_Total"> «จำนวน»
+<input id="BeyondSpecialist_Total" name="BeyondSpecialist_Total" value="" maxlength="" disabled="disabled" required="required" type="text">
+<div class~modal>
+<button type="button" data-bs-dismiss="modal" data-list-field-target="closeButton" data-action> «list-field#clearForm">ยกเลิก»
+<button type="button" data-action> «list-field#addItem">เพิ่มรายนามผู้เชี่ยวชาญด้านต่าง ๆ»
+<button type="button" class~d-none data-action> «list-field#addItem">แก้ไขรายนามผู้เชี่ยวชาญด้านต่าง ๆ»
+<fieldset id="IssueBook_Check-container" data-eform-identity-types="Citizen Juristic">
+<fieldset data-controller="checkbox-field" data-checkbox-field-checked-value="true" data-checkbox-field-default-value-value="1" data-checkbox-field-selector-value="#IssueBook">
+<input name="IssueBook_Check" type="hidden" value="0">
+<input id="IssueBook_Check" name="IssueBook_Check" data-action="change-&gt;checkbox-field#optionChanged cable-ready:after-mo" type="checkbox" value="1">
+<label for="IssueBook_Check"> «11. ขอให้ออกหนังสือรับรองฉบับใหม่ เนื่องจาก»
+<fieldset id="IssueBook-container" data-eform-identity-types="Citizen Juristic">
+<div data-controller="group-field" id="IssueBook" class~d-none disabled>
+<div id="IssueBook[Choice]-container">
+<fieldset data-controller="radio-buttons-field" data-radio-buttons-field-options-value="[{&quot;id&quot;:24230,&quot;label&quot;:&quot; เปลี่ยนชื่อน">
+<legend>
+<input type="hidden" name="IssueBook[Choice]" value="">
+<input name="IssueBook[Choice]" data-show-selector="" data-action> «radio-buttons-field#optionChanged cable-ready:after-morph@document->radio-buttons-field#triggerChange turbo:submit-end@document->radio-buttons-field#sumbitEform»
+<label for="radio_button_24230"> «เปลี่ยนชื่อนิติบุคคลหรือแปรสภาพนิติบุคคล»
+<input name="IssueBook[Choice]" data-show-selector="" data-action> «radio-buttons-field#optionChanged cable-ready:after-morph@document->radio-buttons-field#triggerChange turbo:submit-end@document->radio-buttons-field#sumbitEform»
+<label for="radio_button_24231"> «ชำรุด / เสียหาย»
+<fieldset id="confirm_1-container" data-eform-identity-types="Citizen Juristic">
+<fieldset data-controller="checkbox-field" data-checkbox-field-checked-value="true" data-checkbox-field-default-value-value="1" data-checkbox-field-selector-value="">
+<input name="confirm_1" type="hidden" value="0">
+<input id="confirm_1" name="confirm_1" data-action="change-&gt;checkbox-field#optionChanged cable-ready:after-mo" required="required" type="checkbox" value="1">
+<label for="confirm_1"> «ข้าพเจ้าขอรับรองว่าข้อมูลต่าง ๆ ที่ได้ยื่นต่อสภาวิชาชีพบัญชีเป็นข้อมูลที่ถูกต้องครบถ้วน และข้าพเจ้า ยินดีจะแสดงหลักฐานและข้อมูลอื่นใดที่เกี่ยวข้องกับการปฏิบัติง»
+<fieldset id="content_1001-container" data-eform-identity-types="Citizen Juristic">
+<div data-controller="content-field">
+div «คำเตือน ตามพระราชบัญญัติวิชาชีพบัญชี พ.ศ. 2547 มาตรา 66 นิติบุคคลใดฝ่าฝืนหรือไม่ปฏิบัติตามมาตรา 11 ต้องระวางโทษปรับไม่เกินสามแสนบาทและปรับอีกไม่เกินวันละหนึ่งหม»
+<fieldset id="heading_84-container" data-eform-identity-types="Citizen Juristic">
+<h2> «หลักฐานการแก้ไขข้อมูลนิติบุคคล พร้อมรับรองสำเนาถูกต้องและประทับตรา (ถ้ามี)»
+<fieldset id="file_applicant_3_month-container" data-eform-identity-types="Citizen Juristic">
+<div data-controller="file-field" data-file-field-endpoint-value="https://bizportal-core-api-dev.opendata-dga.cloud" data-file-field-name-value="file_applicant_3_month" data-file-field-label-value="สำเนาหนังสือรับรองการจดทะเบียนนิติบุคคล มีอายุไม่เกิน 3 เดือ" data-file-field-crop-enabled-value="false" data-file-field-aspect-ratio-value="0.8" data-file-field-accept-files-value=".pdf,.jpg,.jpeg,.png">
+p «สำเนาหนังสือรับรองการจดทะเบียนนิติบุคคล มีอายุไม่เกิน 3 เดือน»
+<div data-file-field-target="preview" class~d-none>
+<button type="button" data-action> «file-field#removeFile click->file-field#removeAllFile" class="btn btn-danger">» «ลบ»
+p «ขนาดไฟล์ :»
+<span data-file-field-target="fileSize"> «0 bytes»
+p «อัปโหลดเมื่อ :»
+<span data-file-field-target="uploadedAt">
+<div data-file-field-target="input">
+<div data-file-field-target="formGroup">
+<input type="hidden" name="ApplicationAttachments[][FileTypeCode]" value="file_applicant_3_month">
+<label for="file_applicant_3_month"> «เลือกเอกสาร»
+<input class~d-none name="ApplicationAttachments[][file]" id="file_applicant_3_month" type="text">
+<div class~d-none data-file-field-target="progressContainer">
+p «กำลังดำเนินการ»
+<span data-file-field-target="progress">
+small «รองรับเอกสารชนิด .pdf,.jpg,.jpeg,.png ที่มีขนาดไม่เกิน 50 MB»
+<div class~modal id="cropperModal" data-file-field-target="cropperModal">
+<div class~modal,modal>
+<div class~modal>
+<div class~modal>
+<button type="button" data-bs-dismiss="modal">
+<div class~modal>
+<div class~modal>
+<button type="button" data-bs-dismiss="modal"> «ยกเลิก»
+<button type="button" data-action> «file-field#getCroppedData">ตัดภาพ»
+<div class~modal id="cropperPreviewModal" data-file-field-target="cropperPreviewModal">
+<div class~modal,modal>
+<div class~modal>
+<div class~modal>
+<button type="button" data-bs-dismiss="modal">
+<div class~modal>
+<div class~modal>
+<button type="button" data-bs-dismiss="modal"> «ยกเลิก»
+<button type="button" data-action> «file-field#uploadCroppedImage">ยืนยัน»
+<fieldset id="image_authorization_id_card-container" data-eform-identity-types="Citizen Juristic">
+<div data-controller="file-field" data-file-field-endpoint-value="https://bizportal-core-api-dev.opendata-dga.cloud" data-file-field-name-value="image_authorization_id_card" data-file-field-label-value="สำเนาบัตรประจำตัวประชาชนของกรรมการ/หุ้นส่วนผู้จัดการผู้มีอำน" data-file-field-crop-enabled-value="false" data-file-field-aspect-ratio-value="0.8" data-file-field-accept-files-value=".pdf,.jpg,.jpeg,.png">
+p «สำเนาบัตรประจำตัวประชาชนของกรรมการ/หุ้นส่วนผู้จัดการผู้มีอำนาจลงนาม»
+<div data-file-field-target="preview" class~d-none>
+<button type="button" data-action> «file-field#removeFile click->file-field#removeAllFile" class="btn btn-danger">» «ลบ»
+p «ขนาดไฟล์ :»
+<span data-file-field-target="fileSize"> «0 bytes»
+p «อัปโหลดเมื่อ :»
+<span data-file-field-target="uploadedAt">
+<div data-file-field-target="input">
+<div data-file-field-target="formGroup">
+<input type="hidden" name="ApplicationAttachments[][FileTypeCode]" value="image_authorization_id_card">
+<label for="image_authorization_id_card"> «เลือกเอกสาร»
+<input class~d-none name="ApplicationAttachments[][file]" id="image_authorization_id_card" type="text">
+<div class~d-none data-file-field-target="progressContainer">
+p «กำลังดำเนินการ»
+<span data-file-field-target="progress">
+small «รองรับเอกสารชนิด .pdf,.jpg,.jpeg,.png ที่มีขนาดไม่เกิน 50 MB»
+<div class~modal id="cropperModal" data-file-field-target="cropperModal">
+<div class~modal,modal>
+<div class~modal>
+<div class~modal>
+<button type="button" data-bs-dismiss="modal">
+<div class~modal>
+<div class~modal>
+<button type="button" data-bs-dismiss="modal"> «ยกเลิก»
+<button type="button" data-action> «file-field#getCroppedData">ตัดภาพ»
+<div class~modal id="cropperPreviewModal" data-file-field-target="cropperPreviewModal">
+<div class~modal,modal>
+<div class~modal>
+<div class~modal>
+<button type="button" data-bs-dismiss="modal">
+<div class~modal>
+<div class~modal>
+<button type="button" data-bs-dismiss="modal"> «ยกเลิก»
+<button type="button" data-action> «file-field#uploadCroppedImage">ยืนยัน»
+<fieldset id="image_payment_modify-container" data-eform-identity-types="Citizen Juristic">
+<div data-controller="file-field" data-file-field-endpoint-value="https://bizportal-core-api-dev.opendata-dga.cloud" data-file-field-name-value="image_payment_modify" data-file-field-label-value="เอกสารอื่น ๆ" data-file-field-crop-enabled-value="false" data-file-field-aspect-ratio-value="0.8" data-file-field-accept-files-value=".pdf,.png,.jpg,.jpeg,.zip,.doc,.docx">
+p «เอกสารอื่น ๆ»
+<div data-file-field-target="preview" class~d-none>
+<button type="button" data-action> «file-field#removeFile click->file-field#removeAllFile" class="btn btn-danger">» «ลบ»
+p «ขนาดไฟล์ :»
+<span data-file-field-target="fileSize"> «0 bytes»
+p «อัปโหลดเมื่อ :»
+<span data-file-field-target="uploadedAt">
+<div data-file-field-target="input">
+<div data-file-field-target="formGroup">
+<input type="hidden" name="ApplicationAttachments[][FileTypeCode]" value="image_payment_modify">
+<label for="image_payment_modify"> «เลือกเอกสาร»
+<input class~d-none name="ApplicationAttachments[][file]" id="image_payment_modify" type="text">
+<div class~d-none data-file-field-target="progressContainer">
+p «กำลังดำเนินการ»
+<span data-file-field-target="progress">
+small «รองรับเอกสารชนิด .pdf,.png,.jpg,.jpeg,.zip,.doc,.docx ที่มีขนาดไม่เกิน 50 MB»
+<div class~modal id="cropperModal" data-file-field-target="cropperModal">
+<div class~modal,modal>
+<div class~modal>
+<div class~modal>
+<button type="button" data-bs-dismiss="modal">
+<div class~modal>
+<div class~modal>
+<button type="button" data-bs-dismiss="modal"> «ยกเลิก»
+<button type="button" data-action> «file-field#getCroppedData">ตัดภาพ»
+<div class~modal id="cropperPreviewModal" data-file-field-target="cropperPreviewModal">
+<div class~modal,modal>
+<div class~modal>
+<div class~modal>
+<button type="button" data-bs-dismiss="modal">
+<div class~modal>
+<div class~modal>
+<button type="button" data-bs-dismiss="modal"> «ยกเลิก»
+<button type="button" data-action> «file-field#uploadCroppedImage">ยืนยัน»
+<fieldset id="jsonApi-container" data-eform-identity-types="Citizen Juristic">
+<div class~hidden>
+<input class~hidden name="jsonApi" value="" type="hidden" id="hidden">
+<fieldset id="js_2000-container" data-eform-identity-types="Citizen Juristic">
+<div id="js_2000" class~d-none> «null»
+<input id="acceptTermOfService" type="checkbox" required>
+<label for="acceptTermOfService"> «คลิกเพื่อยอมรับเงื่อนไขการให้บริการดำเนินการทุกครั้ง»
+<button type="button"> «ย้อนกลับ»
+<div class~d-none>
+<button type="button"> «สรุปรายละเอียด»
+<div class~d-none>
+<button type="button" data-action> «eform#submitDraft">บันทึกร่าง»
+<input type="submit" name="commit" value="ส่งคำร้อง">
+<div class~modal id="dataSummaryModal">
+<div class~modal,modal,modal,modal>
+<div class~modal>
+<div class~modal>
+<h1 class~modal id="dataSummaryModalLabel"> «ข้อมูลคำร้อง»
+<button type="button" data-bs-dismiss="modal">
+<div class~modal data-eform-target="dataSummary">
+<div class~modal>
+<button type="button" data-action> «eform#previewJson">Test JSON»
+<button type="button" data-action> «eform#confirmSubmit">ยืนยันการส่งคำร้อง»
+<button type="button" data-bs-dismiss="modal"> «ปิด»
+small «สงวนลิขสิทธิ์ พ.ศ. 2564 ตามพระราชบัญญัติลิขสิทธิ์ 2537 สำนักงานพัฒนารัฐบาลดิจิทัล (องค์การมหาชน)»
