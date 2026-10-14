@@ -3,9 +3,9 @@ export const FORM_CODE = "tfac-68-001-1";
 export const FORM_TITLE = "การแก้ไขข้อมูลนิติบุคคล";
 export const ISSUE_CHOICES = ["เปลี่ยนชื่อนิติบุคคลหรือแปร สภาพนิติบุคคล", "ชำรุด / เสียหาย"] as const;
 export const ATTACHMENTS: AttachmentSpec[] = [
-  { code: "file_applicant_3_month", label: "สำเนาหนังสือรับรองการจดทะเบียนนิติบุคคล มีอายุไม่เกิน 3 เดือน", required: true, accept: ".pdf,.jpg,.jpeg,.png" },
-  { code: "image_authorization_id_card", label: "สำเนาบัตรประจำตัวประชาชนของกรรมการ/หุ้นส่วนผู้จัดการผู้มีอำนาจลงนาม", required: true, accept: ".pdf,.jpg,.jpeg,.png" },
-  { code: "image_payment_modify", label: "เอกสารอื่น ๆ", required: false },
+  { code: "file_applicant_3_month", label: "สำเนาหนังสือรับรองการจดทะเบียนนิติบุคคล มีอายุไม่เกิน 3 เดือน", required: true, accept: ".pdf,.jpg,.jpeg,.png", documentTypeId: "1" },
+  { code: "image_authorization_id_card", label: "สำเนาบัตรประจำตัวประชาชนของกรรมการ/หุ้นส่วนผู้จัดการผู้มีอำนาจลงนาม", required: true, accept: ".pdf,.jpg,.jpeg,.png", documentTypeId: "2" },
+  { code: "image_payment_modify", label: "เอกสารอื่น ๆ", required: false, documentTypeId: "9" },
 ];
 export const EXTRA_TOPICS = [
   ["Modify_Check", "ชื่อนิติบุคคล"], ["Transformation_Check", "แปรสภาพนิติบุคคล"],

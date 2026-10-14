@@ -12,10 +12,30 @@ Written 2026-10-13 at the end of a Claude Code session. Read this together with 
 | Form **TFAC-68-001-3** (renewal) | Done, refactored onto the shared modules below |
 | Form **TFAC-68-001-5** (stop service) | Done, tested end to end |
 | Form **TFAC-68-001-4** (change collateral type) | Done, tested end to end |
-| Form **TFAC-68-001-2** (collateral details) | **Not started in code** — analysis in §5 |
-| Form **TFAC-68-001-1** (edit juristic data) | **Not started** — notes in §6 |
+| Form **TFAC-68-001-2** (collateral details) | Done — tested in browser end to end (2026-10-14), see §5 |
+| Form **TFAC-68-001-1** (edit juristic data) | Done — tested in browser end to end (2026-10-14), see §6 |
 
-`npx tsc --noEmit` and `npx eslint src` are clean as of this handoff. Everything is mock data (no backend yet).
+`npx next typegen`, `npx tsc --noEmit` and `npx eslint src` are clean (2026-10-14; on Windows PowerShell run them via `cmd /c npx …` because `npx.ps1` is blocked). Everything is mock data (no backend yet).
+
+### Status 2026-10-14 (verification + open points)
+
+Verified in headless Chrome (playwright-core installed outside the repo, in `%TEMP%\pw`) against `http://localhost:3000`:
+- **68-001-2 and 68-001-1:** invalid/missing data blocks each step with Thai error text; rows can be added in tables/dialogs; all required files attach; JSON in "สำหรับนักพัฒนา" checked; submit without accepting terms is blocked, then submit shows the success panel; inner scroll container `scrollWidth - clientWidth = 0` at 375px on every step and on the success panel.
+- 68-001-2 collateral rule: 100,000 < 150,000 (3% of capital 5,000,000) blocked; 100,000 + 50,000 passes.
+- 68-001-1: service type change locks Manager/Accountant on (ทำบัญชี), blocks until rows are complete; branch row added and used as receipt address (`Address_Branch`).
+- **Fix this session:** `Document_Type_ID` (from `eformConfig.attachmentAdditionalFields`) added to attachments — 68-001-2: file_applicant_3_month=1, file_copy_money_before_year=7, file_copy_guarantee=6; 68-001-1: file_applicant_3_month=1, image_authorization_id_card=2, image_payment_modify=9.
+- **Regression 68-001-3/4/5:** full flows re-run in headless Chrome at 375px (block on missing data → fill → attach files → JSON → terms block → success): all three reach the success panel, no console errors, no horizontal overflow. (68-001-3 needs a manager row with a 5-digit auditor license for the ทำบัญชีและสอบบัญชี mock; 68-001-4 accepted a 100,000 card deposit vs 150,000 old guarantee — no sum rule is implemented there, not checked against the original.) No shared module was edited this session.
+
+Rules taken from the original (no guessing):
+- `compareConditionSum`: `conGuarantee = 'ผ่านเกณฑ์'` iff `sumNewGuarantee >= sumOldGuarantee`; `conGuarantee` is in the required list of `start1()`, so the sum of the chosen collateral type must be >= the required 3% amount. The required amount = 3% × max(Number1 capital, Number23 service income) (`callLastValue`: capital > income ⇒ CapitalRegister block, otherwise LastEndIncome).
+- `OtherNeed[Detail]` appears only in the `start1()` required-name lists (68-001-1/2/3). No element with that name exists in any original HTML, and `start1()` skips missing/invisible elements, so there is no field and it is not in the payload.
+- `file_copy_money_before_year` is required unconditionally in 68-001-2 (no hide/show logic found in the original script), even though its label says it is for the unaudited-statement case.
+
+Not sure / not verified:
+- 68-001-1 `Capital`: original `start1()` does not force new ≠ old capital; the mock new value equals the old one. `Capital.OldAmount` is sent unformatted (`5000000`), `NowAmount` formatted (`5,000,000.00`) — format of the real backend not verifiable.
+- 68-001-1 `JurLocation[New][Branch_Code]` is in the required list but visible only if the original shows it; the React form pre-fills `00000`.
+- Browser testing was Chrome headless via playwright `setInputFiles`; the earlier "Allow access to file URLs" problem of the Chrome extension was not reproduced.
+- Test-only data: 68-001-1 manager rows with generated valid citizen IDs.
 
 The user writes in Thai; reply in Thai. All UI text is Thai.
 

@@ -7,7 +7,8 @@ export const ATTACHMENTS: AttachmentSpec[] = [
   { code: "file_copy_money_before_year", label: "สำเนางบการเงินของปีก่อน (กรณีที่งบการเงินล่าสุดยังไม่ได้ตรวจสอบและแสดงความเห็นโดยผู้สอบบัญชี)", required: true },
   { code: "file_copy_guarantee", label: "สำเนาหลักประกัน", required: true },
 ];
-ATTACHMENTS.forEach((spec) => { spec.accept = ".pdf,.jpg,.jpeg,.png"; });
+const DOCUMENT_TYPE_IDS: Record<string, string> = { file_applicant_3_month: "1", file_copy_money_before_year: "7", file_copy_guarantee: "6" };
+ATTACHMENTS.forEach((spec) => { spec.accept = ".pdf,.jpg,.jpeg,.png"; spec.documentTypeId = DOCUMENT_TYPE_IDS[spec.code]; });
 export const STATEMENT_TYPES = [
   "ตัวเลขจากงบการเงินที่ตรวจสอบและแสดงความเห็น โดยผู้สอบบัญชีแล้ว",
   "ตัวเลขคาดการณ์ ในกรณีที่งบการเงินล่าสุดยังไม่ได้ตรวจสอบและแสดงความเห็น โดยผู้สอบบัญชี",
